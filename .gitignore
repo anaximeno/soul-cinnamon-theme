@@ -1,0 +1,12 @@
+# Build output
+dist/
+
+# SASS/CSS
+.sass-cache/
+*.css.map
+
+# System/IDE
+.DS_Store
+.vscode/
+*.swp
+*~

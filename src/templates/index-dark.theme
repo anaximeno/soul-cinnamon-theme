@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Soul Dark
+Comment=A Dark Souls inspired theme for Cinnamon
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Soul-Dark
+MetacityTheme=Soul-Dark
+IconTheme=Mint-Y-Dark
+CursorTheme=DMZ-White
+ButtonLayout=close,minimize,maximize:menu

@@ -1,0 +1,64 @@
+// Soul Light Colors - Inspired by Light Souls / Anor Londo
+
+$bg_color: #f5f5f5; // Slightly darker for better contrast
+$base_color: #fafafa;
+$fg_color: #242424; // Darker text for better readability
+
+$panel_bg: #f8f8f8; // Subtle panel
+
+// Accent: Soul Blue
+$accent_color: #5294e2;
+$accent_bg_color: #357abd;
+// Alternative: Magic Blue
+// $accent_color: #4a90e2; 
+// $accent_bg_color: #357abd;
+
+$selected_bg_color: #dedede;
+$selected_fg_color: #000000;
+
+// Colored elements
+$error_color: #c0392b;
+$error_bg_color: #febdbe;
+
+$success_color: #27ae60;
+$success_bg_color: #abebc6;
+
+$warning_color: #f39c12;
+$warning_bg_color: #f9e79f;
+
+$destructive_bg_color: #e74c3c;
+$destructive_color: #c0392b;
+
+$notification_badge_bg_color: $accent_color;
+
+$asset_path: "light-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.75);
+$light_text_color: mix($fg_color, $bg_color, 60%);
+
+$light_bg_color: darken($bg_color, 4%);
+$light_base_color: darken($base_color, 4%);
+$lighter_bg_color: darken($bg_color, 8%);
+$lightest_bg_color: darken($bg_color, 12%);
+
+$link_color: #2980b9;
+
+$borders_color: #c8c8c8;
+$shadow_color: rgba(0, 0, 0, 0.12);
+
+$expo_bg_color: rgba(0, 0, 0, 0.45);
+
+$tooltip_bg_color: rgba(255, 255, 255, 0.95);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 40%);
+
+// Specific Soul vars
+$osd_bg_color: rgba(248, 248, 248, 0.88);
+$osd_fg_color: $fg_color;
+
+// Workspace switcher window representation
+$workspace_window_color: black;
