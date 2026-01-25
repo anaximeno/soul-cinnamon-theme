@@ -154,6 +154,13 @@ StScrollBar {
   }
 }
 
+.user-label {
+  color: $fg_color;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0px;
+}
+
 .user-widget-label { font-weight: bold; } // Bold user label globally
 
 .user-widget.horizontal { spacing: $base_padding; }

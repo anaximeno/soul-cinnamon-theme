@@ -1,14 +1,14 @@
 // Soul Dark Colors - Inspired by Dark Souls
 
-$bg_color: #1e1e1e; // Dark slate (slightly lighter for better contrast)
+$bg_color: rgba(30,30,30,0.85); // Transparent dark slate
 $base_color: #282828; // Slightly lighter for inputs/lists
 $fg_color: #e8e8e8; // Brighter white for better readability
 
-$panel_bg: #141414; // Abyss black
+$panel_bg: rgba(20,20,20,0.70); // Transparent Abyss black
 
-// Accent: Soul Blue
-$accent_color: #5294e2;
-$accent_bg_color: #357abd;
+// Accent: Neutral Gray (Slider style)
+$accent_color: #9e9e9e;
+$accent_bg_color: #757575;
 
 $selected_bg_color: #404040;
 $selected_fg_color: #ffffff;
