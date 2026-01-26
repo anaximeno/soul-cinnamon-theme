@@ -1,6 +1,6 @@
 // grouped window list
 
-$border_width: 3px;
+$border_width: 4px;
 
 .grouped-window-list {
   &-box {}
@@ -31,7 +31,10 @@ $border_width: 3px;
     &.left {
       padding-left: 0;
       padding-right: 0;
-      border-right-width: $border_width;
+      // NOTE: should've been border-right-width but the panel seems to have some
+      // issues with the sizing of the highlight area when the panel is at the left side of the
+      // screen, so for now we use border-left-width instead.
+      border-left-width: $border_width;
 
       & StBin { padding-left: 0; }
     }
@@ -168,7 +171,10 @@ $border_width: 3px;
     &.left {
       padding-left: 0;
       padding-right: 0;
-      border-right-width: $border_width;
+      // NOTE: should've been border-right-width but the panel seems to have some
+      // issues with the sizing of the highlight area when the panel is at the left side of the
+      // screen, so for now we use border-left-width instead.
+      border-left-width: $border_width;
 
       StBin {
         padding-left: 0;
