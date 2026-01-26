@@ -20,14 +20,17 @@
 //    |     └─ appmenu-favs-box
 //    └─ appmenu-system-box
 
-$appmenu_small_padding: 5px;
-$appmenu_padding: 8px;
-$appmenu_large_padding: 12px;
+$appmenu_small_padding: $base_padding;
+$appmenu_padding: $base_padding * 2;
+$appmenu_large_padding: $base_padding * 3;
 
 %appmenu_button {
   padding: 7px;
   spacing: $base_margin;
   border-radius: $base_border_radius;
+  border: 1px solid transparent;
+  transition-duration: 100ms;
+  transition-property: background-color, border-color, color;
 }
 
 .appmenu {
@@ -104,6 +107,11 @@ $appmenu_large_padding: 12px;
       background-color: $lighter_bg_color;
       border-color: $borders_color;
     }
+
+    &:focus {
+      background-color: $light_bg_color;
+      border-color: $accent_bg_color;
+    }
   }
 
   &-system-button {
@@ -134,6 +142,7 @@ $appmenu_large_padding: 12px;
     &-selected {
       @extend %appmenu_button;
       background-color: $light_bg_color;
+      border-color: $borders_color;
 
       &:highlighted { font-weight: bold; }
     }
@@ -144,12 +153,21 @@ $appmenu_large_padding: 12px;
 
     &-label { padding: 0; }
 
-    &:hover { background-color: $lighter_bg_color; }
+    &:hover {
+      background-color: $lighter_bg_color;
+      border-color: $borders_color;
+    }
+
+    &:focus {
+      background-color: $light_bg_color;
+      border-color: $accent_bg_color;
+    }
 
     &-selected {
       @extend %appmenu_button;
 
       background-color: $light_bg_color;
+      border-color: $borders_color;
     }
 
     &-greyed {

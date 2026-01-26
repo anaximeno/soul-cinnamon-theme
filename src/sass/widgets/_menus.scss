@@ -20,6 +20,16 @@ $menuitem_border_radius: $base_border_radius * 1;
 .popup-menu-item {
   @extend %menuitem;
 
+  &:hover {
+    background-color: $light_bg_color;
+    border-color: $borders_color;
+  }
+
+  &:focus {
+    background-color: $light_bg_color;
+    border-color: $accent_bg_color;
+  }
+
   &:active {
     background-color: $light_bg_color;
   }
@@ -60,6 +70,7 @@ $menuitem_border_radius: $base_border_radius * 1;
     margin: 0;
     padding: $base_padding 0 $base_padding $base_padding * 1.5;
 
+    &:hover,
     &:active { background-color: $light_base_color; }
 
     &:first-child {

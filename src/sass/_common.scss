@@ -13,7 +13,7 @@ stage {
 }
 
 %entry_common {
-  min-height: 22px;
+  min-height: 24px;
   border-radius: $base_border_radius;
   padding: 7px $base_padding * 1.5;
   border: 1px solid $borders_color;
@@ -21,12 +21,17 @@ stage {
   selected-color: black;
   selection-background-color: $accent_bg_color;
   caret-size: 1px;
+  transition-duration: 100ms;
+  transition-property: background-color, border-color, color;
 }
 
 %button_common {
   border-radius: $base_border_radius;
   padding: 7px $base_padding * 5;
   font-weight: 500;
+  min-height: 28px;
+  transition-duration: 100ms;
+  transition-property: background-color, border-color, color;
 }
 
 %button {
@@ -52,6 +57,7 @@ stage {
   @extend %entry_common;
   @include entry(normal);
   &:focus { @include entry(focus); }
+  &:hover { @include entry(hover); }
   &:insensitive { @include entry(insensitive); }
 
   StLabel.hint-text { color: transparentize($fg_color, 0.7); }
@@ -82,10 +88,11 @@ stage {
 %dialog_button_default {
   @extend %dialog_button;
 
-  @include button(normal, $c: $accent_bg_color, $style: default);
-  &:hover { @include button(hover, $c: $accent_bg_color, $style: default); }
-  &:active { @include button(active, $c: $accent_bg_color, $style: default); }
-  &:checked { @include button(checked, $c: $accent_bg_color, $style: default); }
+  @include button(normal, $c: $success_bg_color, $style: default);
+  &:focus { @include button(focus, $c: $success_bg_color, $style: default); }
+  &:hover { @include button(hover, $c: $success_bg_color, $style: default); }
+  &:active { @include button(active, $c: $success_bg_color, $style: default); }
+  &:checked { @include button(checked, $c: $success_bg_color, $style: default); }
   &:insensitive {
     border-color: $borders_color;
 
@@ -97,6 +104,7 @@ stage {
   @extend %dialog_button;
 
   @include button(normal, $c: $error_bg_color, $style: default);
+  &:focus { @include button(focus, $c: $error_bg_color, $style: default); }
   &:hover { @include button(hover, $c: $error_bg_color, $style: default); }
   &:active { @include button(active, $c: $error_bg_color, $style: default); }
   &:checked { @include button(checked, $c: $error_bg_color, $style: default); }
@@ -112,9 +120,11 @@ stage {
   font-weight: normal;
   spacing: $base_padding;
   transition-duration: 75ms;
+  transition-property: background-color, border-color, color;
   padding: 7px $base_padding * 1.5;
   margin: 0 $base_margin;
   border-radius: $base_border_radius;
+  border: 1px solid transparent;
 }
 
 /* General Typography */

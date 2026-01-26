@@ -1,7 +1,7 @@
 $applet_separator: transparentize($fg_color, 0.8);
 
 //padding and spacing for applets
-$applet_padding: 4px;
+$applet_padding: 6px;
 
 .applet {
 
@@ -9,6 +9,8 @@ $applet_padding: 4px;
     padding: 0 $applet_padding;
     spacing: $applet_padding;
     text-align: center;
+    transition-duration: 100ms;
+    transition-property: background-color, border-color, color;
 
     &.vertical { padding: $applet_padding 0; }
 

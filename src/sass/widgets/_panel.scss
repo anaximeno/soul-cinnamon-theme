@@ -9,11 +9,11 @@
   }
 
   &Left {
-    spacing: 4px;
+    spacing: $base_padding;
 
     &:dnd { background-color: rgba(255,0,0,0.2); } // For panel edit mode
-    &:ltr { padding-right: 4px; }
-    &:rtl { padding-left: 4px; }
+    &:ltr { padding-right: $base_padding; }
+    &:rtl { padding-left: $base_padding; }
 
     &.vertical {
       padding: 0;
@@ -27,11 +27,11 @@
     &:dnd { background-color: rgba(0,0,255,0.2); }
 
     &:ltr {
-      padding-left: 4px;
+      padding-left: $base_padding;
       spacing: 0;
     }
     &:rtl {
-      padding-right: 4px;
+      padding-right: $base_padding;
       spacing: 0;
     }
 
@@ -50,7 +50,7 @@
   }
 
   &Center {
-    spacing: 4px;
+    spacing: $base_padding;
 
     &:dnd { background-color: rgba(0,255,0,0.2); }
 

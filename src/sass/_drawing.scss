@@ -23,6 +23,7 @@
 
   $entry_fg_color: $fg_color;
   $entry_bg_color: $light_bg_color;
+  $hover_entry_bg_color: $lighter_bg_color;
 
   $insensitive_factor: 3%;
 
@@ -38,6 +39,12 @@
     background-color: $entry_bg_color;
     color: $entry_fg_color;
     border-color: $accent_bg_color;
+  }
+
+  @if $type == 'hover' {
+    background-color: $hover_entry_bg_color;
+    color: $entry_fg_color;
+    border-color: mix($borders_color, $accent_bg_color, 30%);
   }
 
   @if $type == 'insensitive' {

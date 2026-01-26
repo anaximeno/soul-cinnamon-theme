@@ -7,6 +7,10 @@
   border: 1px solid $borders_color;
   padding: $base_padding * 2.5;
 
+  .dialog-button-box {
+    spacing: $base_padding * 1.5;
+  }
+
   .dialog-content-box {
     margin-top: $base_margin * 2;
     margin-bottom: $base_margin * 4;
@@ -65,7 +69,7 @@
 
     .dialog-list-title {
       color: $warning_color;
-      background-color: tranparentize($warning_color, 0.9);
+      background-color: transparentize($warning_color, 0.9);
       padding: $base_padding * 1.5;
       border-radius: $base_border_radius;
       margin: $base_margin 0;

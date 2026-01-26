@@ -77,11 +77,13 @@
     text-align: center;
     width: 2.2em;
     height: 2.2em;
-    border-radius: 9999px;
+    border-radius: $base_border_radius;
     color: $insensitive_fg_color;
+    border: 1px solid transparent;
 
     &:hover {
       background-color: $lighter_bg_color;
+      border-color: $borders_color;
     }
   }
 
@@ -112,7 +114,10 @@
 
   &-not-today {
 
-    &:selected { background-color: $light_bg_color; }
+    &:selected {
+      background-color: $light_bg_color;
+      border-color: $accent_bg_color;
+    }
   }
 
   // the calendar events area
