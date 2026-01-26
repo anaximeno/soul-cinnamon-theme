@@ -169,6 +169,7 @@
 
     border-radius: $base_border_radius;
     padding: $base_padding $base_padding * 6;
+    margin: $base_padding 0;
 
     // special case the :insensitive button sinc we want
     // the label to be the normal color when there are
