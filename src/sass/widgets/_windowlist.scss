@@ -1,5 +1,6 @@
-
 // grouped window list
+
+$border_width: 3px;
 
 .grouped-window-list {
   &-box {}
@@ -12,15 +13,17 @@
   &-item-box {
     padding: 0 $base_padding;
 
-    &.top,
+    &.top {
+      border-bottom-width: $border_width;
+    }
     &.bottom {
-      border-bottom-width: 2px;
+      border-top-width: $border_width;
     }
 
     &.right {
       padding-left: 0;
       padding-right: 0;
-      border-right-width: 2px;
+      border-left-width: $border_width;
 
       & StBin { padding-right: 0; }
     }
@@ -28,9 +31,9 @@
     &.left {
       padding-left: 0;
       padding-right: 0;
-      border-left-width: 2px;
+      border-right-width: $border_width;
 
-      & StBin { padding-left: 1px; }
+      & StBin { padding-left: 0; }
     }
 
     &:hover { background-color: $lighter_bg_color; }
@@ -140,15 +143,21 @@
 
     &.top,
     &.bottom {
-      border-bottom-width: 2px;
-
       StLabel { padding-left: 2px; }
+    }
+
+    &.top {
+      border-bottom-width: $border_width;
+    }
+
+    &.bottom {
+      border-top-width: $border_width;
     }
 
     &.right {
       padding-left: 0;
       padding-right: 0;
-      border-right-width: 2px;
+      border-left-width: $border_width;
 
       StBin {
         padding-right: 0;
@@ -159,7 +168,7 @@
     &.left {
       padding-left: 0;
       padding-right: 0;
-      border-left-width: 2px;
+      border-right-width: $border_width;
 
       StBin {
         padding-left: 0;
