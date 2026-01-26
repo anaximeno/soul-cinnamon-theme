@@ -25,19 +25,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="15.839192"
-     inkscape:cx="15.577767"
-     inkscape:cy="11.940102"
+     inkscape:zoom="16"
+     inkscape:cx="-0.35024404"
+     inkscape:cy="8.0127661"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
      units="px"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1030"
+     inkscape:window-height="1027"
      inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="1">
@@ -63,7 +63,7 @@
      id="layer1"
      transform="translate(0,-1020.3622)">
     <rect
-       style="display:inline;opacity:1;fill:#000000;fill-opacity:0.15294118;stroke:#000000;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.38039216"
+       style="display:inline;opacity:1;fill:#fcfdfd;fill-opacity:1;stroke:#cfd6e6;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4160"
        width="31"
        height="31.000017"
@@ -72,9 +72,9 @@
        rx="1.5"
        ry="1.5" />
     <path
-       style="display:inline;opacity:1;fill:#199ca8;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.39215686"
-       d="m 2.5,1021.3622 0.5,0 0,30 -0.5,0 c -0.831,0 -1.5,-0.669 -1.5,-1.5 l 0,-27 c 0,-0.831 0.669,-1.5 1.5,-1.5 z"
-       id="rect4162"
+       style="display:inline;opacity:1;fill:#35a854;fill-opacity:1;stroke:#35a854;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 2.75,1020.8622 0.75,0 0,31 -0.75,0 c -1.2465,0 -2.25,-0.6805 -2.25,-1.5259 l 0,-27.9482 c 0,-0.8454 1.0035,-1.5259 2.25,-1.5259 z"
+       id="rect4162-5"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sccssss" />
   </g>

@@ -13,7 +13,7 @@
    height="16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="checkbox-unchecked.svg"
    inkscape:export-filename="/home/steffen/.local/share/themes/neu2/gtk-3.0/assets/dark/checkbox-unchecked.png"
    inkscape:export-xdpi="90"
@@ -42,14 +42,14 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#2f2f2f"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0"
+     inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="31.819805"
-     inkscape:cx="6.333941"
-     inkscape:cy="7.7688206"
+     inkscape:zoom="32.000001"
+     inkscape:cx="0.74241001"
+     inkscape:cy="6.0231769"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -58,10 +58,10 @@
      inkscape:guide-bbox="true"
      inkscape:showpageshadow="false"
      showborder="true"
-     inkscape:window-width="1262"
-     inkscape:window-height="861"
-     inkscape:window-x="635"
-     inkscape:window-y="34"
+     inkscape:window-width="1006"
+     inkscape:window-height="723"
+     inkscape:window-x="358"
+     inkscape:window-y="25"
      inkscape:window-maximized="0"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
@@ -82,7 +82,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -94,25 +94,25 @@
     <g
        transform="translate(-17,1036)"
        style="display:inline;opacity:1"
-       id="checkbox-unchecked-dark"
+       id="checkbox-unchecked-7"
        inkscape:label="#g22047">
       <g
          inkscape:label="#g21853"
-         id="sdsd-0-1">
+         id="sdsd-0">
         <g
-           id="scdsdcd-0-4"
+           id="scdsdcd-0"
            inkscape:label="#g14325"
            transform="translate(0,-30)">
           <g
              style="display:inline"
-             id="g15812-6-6-1-4-4"
+             id="g15812-6-6-1-4"
              transform="matrix(0.92951982,0,0,0.92914368,-156.75069,-212.9618)">
             <g
                transform="matrix(0.5089163,0,0,0.51739823,161.7932,197.56426)"
-               id="g5489-2-9-6-8-8-9-7"
+               id="g5489-2-9-6-8-8-9"
                style="display:inline">
               <g
-                 id="g5428-8-1-4-0-0-65-8" />
+                 id="g5428-8-1-4-0-0-65" />
             </g>
           </g>
           <rect
@@ -120,14 +120,14 @@
              x="17"
              height="16"
              width="16"
-             id="rect13523-4-0"
+             id="rect13523-4"
              style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;stroke:none;stroke-width:2;marker:none;enable-background:accumulate" />
           <g
-             id="g5400-2-47">
+             id="g5400-2">
             <rect
                ry="2"
-               style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#5b5b5b;fill-opacity:1;stroke:#1a1a1a;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
-               id="rect5147-9-1-5-7-6-3-70"
+               style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;stroke:#cfcfcf;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+               id="rect5147-9-1-5-7-6-3"
                width="13"
                height="12.999997"
                x="18.5"

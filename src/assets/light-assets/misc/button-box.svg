@@ -39,9 +39,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="18.945179"
-     inkscape:cy="17.423975"
+     inkscape:zoom="16"
+     inkscape:cx="9.376447"
+     inkscape:cy="10.14915"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -88,14 +88,5 @@
        id="rect4145-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csssscc" />
-    <rect
-       style="opacity:0.35;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4137"
-       width="22"
-       height="1"
-       x="5"
-       y="1027.3622"
-       rx="0"
-       ry="1.3877788e-16" />
   </g>
 </svg>
