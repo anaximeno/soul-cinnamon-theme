@@ -17,6 +17,7 @@ dark:
 	@cp -r $(ASSETS_DIR)/* $(OUT_DIR)/Soul-Dark/cinnamon/ 2>/dev/null || true
 	@cp src/templates/metadata-dark.json $(OUT_DIR)/Soul-Dark/metadata.json
 	@cp src/templates/index-dark.theme $(OUT_DIR)/Soul-Dark/index.theme
+	@cp src/templates/thumbnail-dark.png $(OUT_DIR)/Soul-Dark/cinnamon/thumbnail.png
 	@echo "Soul Dark built in $(OUT_DIR)/Soul-Dark"
 
 light:
@@ -26,6 +27,7 @@ light:
 	@cp -r $(ASSETS_DIR)/* $(OUT_DIR)/Soul-Light/cinnamon/ 2>/dev/null || true
 	@cp src/templates/metadata-light.json $(OUT_DIR)/Soul-Light/metadata.json
 	@cp src/templates/index-light.theme $(OUT_DIR)/Soul-Light/index.theme
+	@cp src/templates/thumbnail-light.png $(OUT_DIR)/Soul-Light/cinnamon/thumbnail.png 
 	@echo "Soul Light built in $(OUT_DIR)/Soul-Light"
 
 clean:
