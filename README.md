@@ -27,6 +27,12 @@ Dependencies:
 
 - `sassc`
 
+If you're on a debian based system you can install the dependencies with:
+
+```bash
+apt install sassc
+```
+
 To build both Light and Dark variants:
 
 ```bash
