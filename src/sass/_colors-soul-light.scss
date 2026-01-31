@@ -2,24 +2,24 @@ $bg_color: #f5f5f5;
 $base_color: #fafafa;
 $fg_color: #242424;
 
-$panel_bg: #f8f8f8;
+$panel_bg: #f7f7f7;
 
 // Accent
 $accent_color: #2f3437;
-$accent_bg_color: #9c9c9c;
+$accent_bg_color: #b5b5b5;
 
-$selected_bg_color: #dedede;
+$selected_bg_color: #d8d8d8;
 $selected_fg_color: #000000;
 
 // Colored elements
 $error_color: #c0392b;
-$error_bg_color: #febdbe;
+$error_bg_color: #f3b1b2;
 
 $success_color: #27ae60;
-$success_bg_color: #abebc6;
+$success_bg_color: #bfe8cc;
 
 $warning_color: #f39c12;
-$warning_bg_color: #f9e79f;
+$warning_bg_color: #f3e19a;
 
 $destructive_bg_color: #e74c3c;
 $destructive_color: #c0392b;
@@ -38,7 +38,7 @@ $light_base_color: darken($base_color, 4%);
 $lighter_bg_color: darken($bg_color, 8%);
 $lightest_bg_color: darken($bg_color, 12%);
 
-$link_color: #2980b9;
+$link_color: #1f6fb2;
 
 $borders_color: #c8c8c8;
 $shadow_color: rgba(0, 0, 0, 0.12);
