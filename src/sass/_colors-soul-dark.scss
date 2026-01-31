@@ -29,11 +29,11 @@ $notification_badge_bg_color: #d08a3a;
 $asset_path: "dark-assets";
 $common_assets: "common-assets";
 
-// Derived colors (mimicking default theme logic)
+// Derived colors
 $large_icon_color: rgba($fg_color, 0.8);
 $light_text_color: mix($fg_color, $bg_color, 70%);
 
-$light_bg_color: mix($bg_color, #ffffff, 92%); // slightly lighter
+$light_bg_color: mix($bg_color, #ffffff, 92%);
 $light_base_color: mix($base_color, #ffffff, 92%);
 $lighter_bg_color: mix($bg_color, #ffffff, 88%);
 $lightest_bg_color: mix($bg_color, #ffffff, 80%);
@@ -51,7 +51,6 @@ $tooltip_bg_color: rgba(30, 30, 30, 0.95);
 $tooltip_fg_color: $fg_color;
 $tooltip_border_color: lighten($bg_color, 10%);
 
-// Specific Soul vars
 $osd_bg_color: rgba(24, 24, 24, 0.88);
 $osd_fg_color: $fg_color;
 
