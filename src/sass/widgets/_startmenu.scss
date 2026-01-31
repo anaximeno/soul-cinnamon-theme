@@ -85,10 +85,10 @@ $appmenu_large_padding: $base_padding * 3;
       padding: $base_padding * 1.4;
       border: 1px solid $borders_color;
       border-radius: 99px; // Keep pill shape for buttons themselves, or match menu? Cinnamon-sass uses 9999px.
-      background-color: lighten($base_color, 10%);
-      &-lock:hover { background-color: lighten($base_color, 15%); }
-      &-logout:hover { background-color: lighten($base_color, 15%); }
-      &-shutdown { background-color: $destructive_bg_color; }
+      background-color: $base_color;
+      &-lock:hover { background-color: $selected_bg_color; }
+      &-logout:hover { background-color: $selected_bg_color; }
+      &-shutdown { background-color: $destructive_bg_color; color: #fff; }
       &-shutdown:hover { background-color: lighten($destructive_bg_color, 5%); }
     }
   }
@@ -119,13 +119,13 @@ $appmenu_large_padding: $base_padding * 3;
     padding: $base_padding * 1.4;
     border: 1px solid $borders_color;
     border-radius: 99px;
-    background-color: lighten($bg_color, 10%);
+    background-color: $bg_color;
 
-    &-shutdown { background-color: $destructive_bg_color; }
+    &-shutdown { background-color: $destructive_bg_color; color: #fff; }
 
-    &-lock:hover { background-color: lighten($bg_color, 15%); }
-    &-logout:hover { background-color: lighten($bg_color, 15%); }
-    &-shutdown:hover { background-color: $destructive_bg_color; }
+    &-lock:hover { background-color: $selected_bg_color; }
+    &-logout:hover { background-color: $selected_bg_color; }
+    &-shutdown:hover { background-color: lighten($destructive_bg_color, 5%); }
   }
 
   &-application-button {
