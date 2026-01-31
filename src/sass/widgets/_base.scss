@@ -73,16 +73,9 @@ StScrollView {
     -st-vfade-offset: 48px;
     -st-hfade-offset: 0 !important;
   }
-
   &.hfade {
     -st-hfade-offset: 48px;
     -st-vfade-offset: 0 !important;
-  }
-
-  &.vfade.hfade,
-  &.hfade.vfade {
-    -st-vfade-offset: 48px;
-    -st-hfade-offset: 48px;
   }
 }
 
