@@ -68,8 +68,23 @@
   &:rtl { background-image: url("corner-ripple.png"); }
 }
 
-// scrollbars
-StScrollView.vfade { -st-vfade-offset: 48px; }
+StScrollView {
+  &.vfade {
+    -st-vfade-offset: 48px;
+    -st-hfade-offset: 0 !important;
+  }
+
+  &.hfade {
+    -st-hfade-offset: 48px;
+    -st-vfade-offset: 0 !important;
+  }
+
+  &.vfade.hfade,
+  &.hfade.vfade {
+    -st-vfade-offset: 48px;
+    -st-hfade-offset: 48px;
+  }
+}
 
 StScrollBar {
 
@@ -87,9 +102,13 @@ StScrollBar {
   StButton#hhandle {
     background-color: mix($fg_color, $bg_color, 25%);
     border-radius: $base_border_radius;
+    transition-duration: 100ms;
 
     &:hover { background-color: mix($fg_color, $bg_color, 35%); }
-    &:active {}
+
+    &:active {
+      background-color: mix($fg_color, $bg_color, 45%);
+    }
   }
 }
 
@@ -161,7 +180,7 @@ StScrollBar {
   margin: 0px;
 }
 
-.user-widget-label { font-weight: bold; } // Bold user label globally
+.user-widget-label { font-weight: bold; }
 
 .user-widget.horizontal { spacing: $base_padding; }
 

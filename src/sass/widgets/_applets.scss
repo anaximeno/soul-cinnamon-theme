@@ -45,6 +45,7 @@ $applet_padding: 6px;
 .applet-cornerbar {
   width: $base_margin * 2;
   background-color: $lighter_bg_color;
+  border: 1px solid $borders_color;
 
   &.vertical { height: $base_margin * 2; }
 
