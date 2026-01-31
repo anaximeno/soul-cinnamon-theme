@@ -41,6 +41,14 @@ make dark
 make light
 ```
 
+## Testing
+
+After compiling you can test the theme by moving the produced artifacts in the `dist/` folder to the `~/.themes/` folder in your system:
+
+```bash
+cp -r dist/* ~/.themes
+```
+
 ## Customization
 
 Edit `src/sass/_colors-soul-dark.scss` or `src/sass/_colors-soul-light.scss` to adjust the color palette. Edit `src/sass/_soul-main.scss` or widgets for structural changes.
