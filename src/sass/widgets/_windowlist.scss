@@ -23,7 +23,7 @@ $border_width: 4px;
     &.right {
       padding-left: 0;
       padding-right: 0;
-      border-left-width: $border_width;
+      border-right-width: $border_width;
 
       & StBin { padding-right: 0; }
     }
@@ -31,9 +31,6 @@ $border_width: 4px;
     &.left {
       padding-left: 0;
       padding-right: 0;
-      // NOTE: should've been border-right-width but the panel seems to have some
-      // issues with the sizing of the highlight area when the panel is at the left side of the
-      // screen, so for now we use border-left-width instead.
       border-left-width: $border_width;
 
       & StBin { padding-left: 0; }
@@ -166,7 +163,7 @@ $border_width: 4px;
     &.right {
       padding-left: 0;
       padding-right: 0;
-      border-left-width: $border_width;
+      border-right-width: $border_width;
 
       StBin {
         padding-right: 0;
@@ -177,9 +174,6 @@ $border_width: 4px;
     &.left {
       padding-left: 0;
       padding-right: 0;
-      // NOTE: should've been border-right-width but the panel seems to have some
-      // issues with the sizing of the highlight area when the panel is at the left side of the
-      // screen, so for now we use border-left-width instead.
       border-left-width: $border_width;
 
       StBin {
