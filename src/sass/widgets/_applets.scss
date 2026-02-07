@@ -15,7 +15,7 @@ $applet_padding: 6px;
     &.vertical { padding: $applet_padding 0; }
 
     &:hover {
-      background-color: $lighter_bg_color;
+      background-color: $lightest_bg_color;
       transition-duration: 150ms;
     }
 

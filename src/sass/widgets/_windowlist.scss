@@ -39,7 +39,8 @@ $border_width: 4px;
     }
 
     &:hover {
-      background-color: $lighter_bg_color;
+      background-color: $lightest_bg_color;
+      border-color: transparentize($accent_bg_color, 0.7);
       transition-duration: 150ms;
     }
     &:focus {
@@ -193,7 +194,7 @@ $border_width: 4px;
     }
 
     &:hover {
-      background-color: $light_bg_color;
+      background-color: $lightest_bg_color;
     }
 
     &:focus {
