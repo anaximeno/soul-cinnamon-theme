@@ -12,11 +12,11 @@
     background-image: url("#{$common_assets}/misc/add-workspace.svg");
     height: 200px;
     width: 35px;
-    transition-duration: 150;
+    transition-duration: 150ms;
 
     &:hover {
       background-image: url("#{$common_assets}/misc/add-workspace-hover.svg");
-      transition-duration: 150;
+      transition-duration: 150ms;
     }
   }
 
@@ -25,6 +25,13 @@
     height: 26px;
     width: 26px;
     -cinnamon-close-overlap: 13px;
+
+    &:hover {
+      background-image: url("#{$common_assets}/misc/close-hover.svg");
+    }
+    &:active {
+      background-image: url("#{$common_assets}/misc/close-active.svg");
+    }
   }
 }
 
@@ -65,7 +72,12 @@
     width: 26px;
     -cinnamon-close-overlap: 13px;
 
-    &:hover {}
+    &:hover {
+      background-image: url("#{$common_assets}/misc/close-hover.svg");
+    }
+    &:active {
+      background-image: url("#{$common_assets}/misc/close-active.svg");
+    }
   }
 
   &-border {
