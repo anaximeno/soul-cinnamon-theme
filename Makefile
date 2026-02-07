@@ -28,6 +28,11 @@ light:
 	@cp src/templates/thumbnail-light.png $(OUT_DIR)/Soul-Light/cinnamon/thumbnail.png
 	@echo "Soul Light built in $(OUT_DIR)/Soul-Light"
 
+install: all
+	@echo "Installing Soul Cinnamon Theme..."
+	@cp -r $(OUT_DIR)/* ~/.themes/ 2>/dev/null || true
+	@echo "Soul Cinnamon Theme installed to ~/.themes/"
+
 clean:
 	@rm -rf $(OUT_DIR)
 	@echo "Cleaned build directory."

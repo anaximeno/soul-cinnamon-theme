@@ -55,6 +55,12 @@ After compiling you can test the theme by moving the produced artifacts in the `
 cp -r dist/* ~/.themes
 ```
 
+Or using the Makefile instruction:
+
+```bash
+make install
+```
+
 ## Customization
 
 Edit `src/sass/_colors-soul-dark.scss` or `src/sass/_colors-soul-light.scss` to adjust the color palette. Edit `src/sass/_soul-main.scss` or widgets for structural changes.
