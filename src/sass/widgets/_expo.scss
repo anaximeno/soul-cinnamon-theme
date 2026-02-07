@@ -33,10 +33,10 @@
   &-background { background-color: $expo_bg_color; }
 
   &-workspace-thumbnail-frame {
-    border: 1px solid $borders_color;
+    border: 1px solid transparentize($borders_color, 0.7);
 
     &#active {
-      border-color: $accent_color;
+      border-color: transparentize($borders_color, 0.3);
       border-width: 2px;
     }
   }
