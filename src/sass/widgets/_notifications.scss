@@ -1,10 +1,10 @@
-$notification_width: 32em;
+$notification_width: 30em;
 
 #notification {
   width: $notification_width;
   border-radius: $larger_border_radius;
   border: 1px solid $borders_color;
-  box-shadow: 0 2px 4px $shadow_color;
+  box-shadow: 0 3px 8px $shadow_color;
   background-color: $bg_color;
   padding: $base_padding * 2;
   margin-from-right-edge-of-screen: 16px;
@@ -12,11 +12,11 @@ $notification_width: 32em;
   spacing-columns: $base_padding * 1.5;
 
   &.multi-line-notification {
-    padding-bottom: $base_padding * 1.5;
+    padding-bottom: $base_padding * 2;
     color: $fg_color;
   }
 
-  &-body { spacing: $base_padding; }
+  &-body { spacing: $base_padding * 1.5; }
   &-actions { spacing: $base_padding * 2; }
 
   &-scrollview {}
@@ -34,14 +34,12 @@ $notification_width: 32em;
 
   &-button {
     @extend %button;
-
-    padding: 7px $base_padding * 2;
+    padding: 6px $base_padding * 2;
   }
 
   &-icon-button {
     @extend %button;
-
-    padding: 7px;
+    padding: 6px;
   }
 
   &-icon-button > StIcon {}

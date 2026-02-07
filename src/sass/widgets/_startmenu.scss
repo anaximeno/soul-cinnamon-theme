@@ -25,12 +25,12 @@ $appmenu_padding: $base_padding * 2;
 $appmenu_large_padding: $base_padding * 3;
 
 %appmenu_button {
-  padding: 7px;
+  padding: 6px;
   spacing: $base_margin;
   border-radius: $base_border_radius;
   border: 1px solid transparent;
-  transition-duration: 100ms;
-  transition-property: background-color, border-color, color;
+  transition-duration: 200ms;
+  transition-property: background-color, border-color, color, box-shadow;
 }
 
 .appmenu {
@@ -84,12 +84,15 @@ $appmenu_large_padding: $base_padding * 3;
     .appmenu-system-button {
       padding: $base_padding * 1.4;
       border: 1px solid $borders_color;
-      border-radius: 99px; // Keep pill shape for buttons themselves, or match menu? Cinnamon-sass uses 9999px.
+      border-radius: 99px;
       background-color: $base_color;
+      transition-duration: 200ms;
+      transition-property: background-color, border-color, box-shadow;
+
       &-lock:hover { background-color: $selected_bg_color; }
       &-logout:hover { background-color: $selected_bg_color; }
       &-shutdown { background-color: $destructive_bg_color; color: #fff; }
-      &-shutdown:hover { background-color: lighten($destructive_bg_color, 5%); }
+      &-shutdown:hover { background-color: lighten($destructive_bg_color, 8%); }
     }
   }
 

@@ -93,14 +93,14 @@ StScrollBar {
 
   StButton#vhandle,
   StButton#hhandle {
-    background-color: mix($fg_color, $bg_color, 25%);
+    background-color: mix($fg_color, $bg_color, 30%);
     border-radius: $base_border_radius;
-    transition-duration: 100ms;
+    transition-duration: 200ms;
 
-    &:hover { background-color: mix($fg_color, $bg_color, 35%); }
+    &:hover { background-color: mix($fg_color, $bg_color, 40%); }
 
     &:active {
-      background-color: mix($fg_color, $bg_color, 45%);
+      background-color: mix($fg_color, $bg_color, 50%);
     }
   }
 }
@@ -122,10 +122,9 @@ StScrollBar {
 }
 
 // tile previews
-
 .tile-preview {
-  background-color: transparentize($accent_color, 0.8);
-  border: 1px solid transparentize($accent_color, 0.3);
+  background-color: transparentize($accent_color, 0.75);
+  border: 2px solid transparentize($accent_color, 0.2);
 }
 
 #Tooltip {
@@ -137,6 +136,7 @@ StScrollBar {
   font-weight: normal;
   text-align: center;
   margin: $base_margin;
+  box-shadow: 0 2px 4px $shadow_color;
 }
 
 // user avatar

@@ -2,7 +2,7 @@
 
 $barlevel_height: 5px;
 
-$ws_indicator_height: 28px;
+$ws_indicator_height: 30px;
 $ws_dot_active: $ws_indicator_height / 3;
 $ws_dot_inactive: $ws_indicator_height / 6;
 
@@ -13,7 +13,7 @@ $ws_dot_inactive: $ws_indicator_height / 6;
   @extend %title_4;
 
   margin-bottom: 0.8em;
-  border-radius: $modal_dialog_radius; // Used to be 9999px
+  border-radius: $modal_dialog_radius;
   font-weight: 500;
   spacing: $base_padding * 1.5;
   padding: $base_padding * 1.5 $base_padding * 3;

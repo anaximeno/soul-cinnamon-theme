@@ -1,10 +1,10 @@
-$menuitem_border_radius: $base_border_radius * 1;
+$menuitem_border_radius: $base_border_radius;
 
 //container of the popup menu
 .menu {
   min-width: 14em;
   color: $fg_color;
-  padding: 4px;
+  padding: 6px;
 }
 
 // popup content
@@ -13,7 +13,7 @@ $menuitem_border_radius: $base_border_radius * 1;
   background-color: $bg_color;
   border-radius: $larger_border_radius;
   border: 1px solid $borders_color;
-  box-shadow: 0 2px 4px $shadow_color;
+  box-shadow: 0 2px 6px $shadow_color;
 }
 
 // menu items
@@ -23,6 +23,7 @@ $menuitem_border_radius: $base_border_radius * 1;
   &:hover {
     background-color: $light_bg_color;
     border-color: $borders_color;
+    transition-duration: 150ms;
   }
 
   &:focus {
@@ -31,7 +32,8 @@ $menuitem_border_radius: $base_border_radius * 1;
   }
 
   &:active {
-    background-color: $light_bg_color;
+    background-color: $lighter_bg_color;
+    transition-duration: 50ms;
   }
 
   &:insensitive {

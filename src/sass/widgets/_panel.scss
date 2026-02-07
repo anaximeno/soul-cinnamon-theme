@@ -3,7 +3,7 @@
 .panel {
 
   &-top, &-bottom, &-left, &-right{
-    font-weight: bold;
+    font-weight: 600;
     color: $fg_color;
     background-color: $panel_bg;
   }

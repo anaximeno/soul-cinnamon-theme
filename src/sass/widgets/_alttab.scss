@@ -7,22 +7,25 @@
   background-color: $panel_bg;
   border: 1px solid $borders_color;
   border-radius: $larger_border_radius;
-  box-shadow: 0 2px 4px $shadow_color;
+  box-shadow: 0 3px 6px $shadow_color;
   padding: $base_padding * 2.5;
 
   &-item-container { spacing: $base_margin * 2; }
 
   .item-box {
-    padding: $base_margin * 1.5;
+    padding: $base_margin * 2;
     border: 1px solid transparent;
     border-radius: $base_border_radius;
     background-color: transparent;
+    transition-duration: 200ms;
+    transition-property: background-color, border-color, box-shadow;
 
     // this doesn't ever seem to get used
     &:outlined { border-color: $accent_color; }
     &:selected {
-      border-color: $borders_color;
-      background-color: $light_bg_color
+      border-color: $accent_bg_color;
+      background-color: $light_bg_color;
+      box-shadow: 0 0 0 1px transparentize($accent_bg_color, 0.6);
     }
   }
 

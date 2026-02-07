@@ -9,13 +9,14 @@ $applet_padding: 6px;
     padding: 0 $applet_padding;
     spacing: $applet_padding;
     text-align: center;
-    transition-duration: 100ms;
+    transition-duration: 200ms;
     transition-property: background-color, border-color, color;
 
     &.vertical { padding: $applet_padding 0; }
 
     &:hover {
       background-color: $lighter_bg_color;
+      transition-duration: 150ms;
     }
 
     &:highlight { background-color: transparentize($error_bg_color, 0.5); }

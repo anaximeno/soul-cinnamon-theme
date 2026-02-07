@@ -1,7 +1,7 @@
 .calendar {
   margin-top: $base_margin * 4;
-  spacing-rows: 2px;
-  spacing-columns: 2px;
+  spacing-rows: 3px;
+  spacing-columns: 3px;
 
   // can be used to set the entire bg color
   &-background {}
@@ -21,9 +21,12 @@
     margin-left: $base_padding;
     padding: $base_padding $base_padding * 1.5;
     border-radius: $base_border_radius;
+    transition-duration: 200ms;
+    transition-property: background-color, border-color;
 
     &:hover {
       background-color: $lighter_bg_color;
+      transition-duration: 150ms;
     }
   }
 
@@ -43,22 +46,30 @@
 
   &-change-month-back,
   &-change-month-forward:rtl {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     color: $fg_color;
     background-image: url("#{$common_assets}/misc/calendar-arrow-left.svg");
+    transition-duration: 200ms;
 
-    &:hover { background-image: url("#{$common_assets}/misc/calendar-arrow-left-hover.svg"); }
+    &:hover {
+      background-image: url("#{$common_assets}/misc/calendar-arrow-left-hover.svg");
+      transition-duration: 150ms;
+    }
   }
 
   &-change-month-forward,
   &-change-month-back:rtl {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     color: $fg_color;
     background-image: url("#{$common_assets}/misc/calendar-arrow-right.svg");
+    transition-duration: 200ms;
 
-    &:hover { background-image: url("#{$common_assets}/misc/calendar-arrow-right-hover.svg"); }
+    &:hover {
+      background-image: url("#{$common_assets}/misc/calendar-arrow-right-hover.svg");
+      transition-duration: 150ms;
+    }
   }
 
   &-day-event-dot-box {
@@ -75,22 +86,24 @@
 
   &-day-base {
     text-align: center;
-    width: 2.2em;
-    height: 2.2em;
+    width: 2.3em;
+    height: 2.3em;
     border-radius: $base_border_radius;
     color: $insensitive_fg_color;
     border: 1px solid transparent;
+    transition-duration: 200ms;
+    transition-property: background-color, border-color;
 
     &:hover {
       background-color: $lighter_bg_color;
       border-color: $borders_color;
+      transition-duration: 150ms;
     }
   }
 
   &-day-heading {
     color: $fg_color;
     margin-top: $base_margin * 2;
-    // using this to move the weekday row closer to the dates
     height: 1.4em;
   }
 
