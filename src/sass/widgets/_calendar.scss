@@ -25,7 +25,8 @@
     transition-property: background-color, border-color;
 
     &:hover {
-      background-color: $lighter_bg_color;
+      background-color: $lightest_bg_color;
+      border-color: $borders_color;
       transition-duration: 150ms;
     }
   }

@@ -144,7 +144,7 @@ $appmenu_large_padding: $base_padding * 3;
 
     &-selected {
       @extend %appmenu_button;
-      background-color: $light_bg_color;
+      background-color: $lighter_bg_color;
       border-color: $borders_color;
 
       &:highlighted { font-weight: bold; }
@@ -169,7 +169,7 @@ $appmenu_large_padding: $base_padding * 3;
     &-selected {
       @extend %appmenu_button;
 
-      background-color: $light_bg_color;
+      background-color: $lighter_bg_color;
       border-color: $borders_color;
     }
 

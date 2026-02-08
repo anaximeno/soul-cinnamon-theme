@@ -40,7 +40,7 @@
   &-background { background-color: $expo_bg_color; }
 
   &-workspace-thumbnail-frame {
-    border: 1px solid transparentize($borders_color, 0.7);
+    border: 1px solid transparentize($borders_color, 0.6);
 
     &#active {
       border-color: transparentize($borders_color, 0.3);
