@@ -225,10 +225,10 @@ $applet_padding: 6px;
     }
 
     .windows {
-      -active-window-background: transparentize($workspace_window_color, 0.7);
-      -active-window-border: transparentize($workspace_window_color, 0.6);
-      -inactive-window-background: transparentize($workspace_window_color, 0.9);
-      -inactive-window-border: transparentize($workspace_window_color, 0.85);
+      -active-window-background: transparentize($workspace_window_color, 0.6);
+      -active-window-border: transparentize($workspace_window_color, 0.55);
+      -inactive-window-background: transparentize($workspace_window_color, 0.85);
+      -inactive-window-border: transparentize($workspace_window_color, 0.8);
     }
   }
 }
