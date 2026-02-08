@@ -210,15 +210,15 @@ $applet_padding: 6px;
   spacing: $base_margin;
 
   .workspace {
-    border: 1px solid transparentize($fg_color, 0.7);
     background-color: $base_color;
+    box-shadow: inset 0 0 1px 1.5px transparentize($accent_bg_color, 0.5);
 
     &:active {
-      border-color: $accent_color;
+      box-shadow: inset 0 0 0.5px 1.5px transparentize($accent_color, 0.3);
 
       .windows {
         -active-window-background: transparentize($workspace_window_color, 0.6);
-        -active-window-border: transparentize($workspace_window_color, 0.5);
+        -active-window-border: transparentize($workspace_window_color, 0.55);
         -inactive-window-background: transparentize($workspace_window_color, 0.85);
         -inactive-window-border: transparentize($workspace_window_color, 0.8);
       }

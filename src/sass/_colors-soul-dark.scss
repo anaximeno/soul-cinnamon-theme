@@ -55,4 +55,4 @@ $osd_bg_color: rgba(24, 24, 24, 0.88);
 $osd_fg_color: $fg_color;
 
 // Workspace switcher window representation
-$workspace_window_color: white;
+$workspace_window_color: $fg_color;
