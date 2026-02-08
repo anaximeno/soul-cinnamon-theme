@@ -1,7 +1,5 @@
 // grouped window list
 
-$border_width: 5px;
-
 .grouped-window-list {
   &-box {}
 
@@ -16,16 +14,16 @@ $border_width: 5px;
     transition-property: background-color, border-color;
 
     &.top {
-      border-bottom-width: $border_width;
+      border-bottom-width: $windowlist_border_width;
     }
     &.bottom {
-      border-top-width: $border_width;
+      border-top-width: $windowlist_border_width;
     }
 
     &.right {
       padding-left: 0;
       padding-right: 0;
-      border-right-width: $border_width;
+      border-right-width: $windowlist_border_width;
 
       & StBin { padding-right: 0; }
     }
@@ -33,7 +31,7 @@ $border_width: 5px;
     &.left {
       padding-left: 0;
       padding-right: 0;
-      border-left-width: $border_width;
+      border-left-width: $windowlist_border_width;
 
       & StBin { padding-left: 0; }
     }
@@ -164,17 +162,17 @@ $border_width: 5px;
     }
 
     &.top {
-      border-bottom-width: $border_width;
+      border-bottom-width: $windowlist_border_width;
     }
 
     &.bottom {
-      border-top-width: $border_width;
+      border-top-width: $windowlist_border_width;
     }
 
     &.right {
       padding-left: 0;
       padding-right: 0;
-      border-right-width: $border_width;
+      border-right-width: $windowlist_border_width;
 
       StBin {
         padding-right: 0;
@@ -185,7 +183,7 @@ $border_width: 5px;
     &.left {
       padding-left: 0;
       padding-right: 0;
-      border-left-width: $border_width;
+      border-left-width: $windowlist_border_width;
 
       StBin {
         padding-left: 0;
