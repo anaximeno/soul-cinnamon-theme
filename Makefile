@@ -5,8 +5,9 @@ SASSC = sassc
 SRC_DIR = src/sass
 ASSETS_DIR = src/assets
 OUT_DIR = dist
+THEMES_DIR = ~/.themes
 
-.PHONY: all clean dark light
+.PHONY: all clean dark light install
 
 all: dark light
 
@@ -30,8 +31,8 @@ light:
 
 install: all
 	@echo "Installing Soul Cinnamon Theme..."
-	@cp -r $(OUT_DIR)/* ~/.themes/ 2>/dev/null || true
-	@echo "Soul Cinnamon Theme installed to ~/.themes/"
+	@cp -r $(OUT_DIR)/* $(THEMES_DIR) 2>/dev/null || true
+	@echo "Soul Cinnamon Theme installed to $(THEMES_DIR)"
 
 clean:
 	@rm -rf $(OUT_DIR)
