@@ -3,13 +3,16 @@
 $menu_outer_padding: 9px;
 
 %start_menu_button {
-  padding: $base_padding;
+  padding: 6px;
   spacing: $base_margin;
   border-radius: $base_border_radius;
+  border: 1px solid transparent;
+  transition-duration: 200ms;
+  transition-property: background-color, border-color, color, box-shadow;
 }
 
-.menu {
 
+.menu {
   // this can be used to color the entire menu background but we aren't using it here
   &-background {}
 
@@ -21,14 +24,28 @@ $menu_outer_padding: 9px;
   }
 
   &-favorites-button {
+    @extend %start_menu_button;
     padding: $base_padding * 1.5;
-    border-radius: $base_border_radius;
+    margin: 0 $base_padding;
 
-    &:hover { background-color: $lightest_bg_color; }
+    &:hover {
+      background-color: $lighter_bg_color;
+      border-color: $borders_color;
+    }
+    &:focus {
+      background-color: $light_bg_color;
+      border-color: $accent_bg_color;
+    }
   }
 
-  &-categories-box { padding: $menu_outer_padding $base_padding * 4; }
-  &-applications-box { padding: $menu_outer_padding; }
+  &-categories-box {
+    padding: $menu_outer_padding $base_padding * 4;
+    spacing: $base_padding * 2;
+  }
+  &-applications-box {
+    padding: $menu_outer_padding;
+    padding-right: $base_padding;
+  }
   &-applications-inner-box {
     &:ltr { padding-left: $base_padding * 4; }
     &:rtl { padding-right: $base_padding * 4; }
@@ -38,14 +55,17 @@ $menu_outer_padding: 9px;
     @extend %start_menu_button;
 
     &-label { padding: 0; }
+    &-description {
+      @extend %caption;
+      color: $light_text_color;
+    }
 
     &:highlighted { font-weight: bold; }
 
     &-selected {
       @extend %start_menu_button;
-
-      background-color: $light_bg_color;
-
+      background-color: $lighter_bg_color;
+      border-color: $borders_color;
       &:highlighted { font-weight: bold; }
     }
   }
@@ -55,19 +75,25 @@ $menu_outer_padding: 9px;
 
     &-label { padding: 0; }
 
-    &:hover { background-color: $lighter_bg_color; }
+    &:hover {
+      background-color: $lighter_bg_color;
+      border-color: $borders_color;
+    }
+    &:focus {
+      background-color: $light_bg_color;
+      border-color: $accent_bg_color;
+    }
 
     &-selected {
       @extend %start_menu_button;
-
-      background-color: $light_bg_color;
+      background-color: $lighter_bg_color;
+      border-color: $borders_color;
     }
 
     &-greyed {
       @extend %start_menu_button;
       color: $insensitive_fg_color;
       font-style: italic;
-
       StIcon { opacity: 0.5; }
     }
   }
@@ -84,7 +110,8 @@ $menu_outer_padding: 9px;
   &-selected-app-description { color: $insensitive_fg_color; }
 
   &-search-box {
-    padding: 0  0 $base_padding $menu_outer_padding;
+    padding: 0 0 $base_padding $menu_outer_padding;
+    spacing: $base_padding * 2;
   }
 }
 
