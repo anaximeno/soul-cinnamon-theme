@@ -39,7 +39,7 @@
     background-color: $entry_bg_color;
     color: $entry_fg_color;
     border-color: $accent_bg_color;
-    box-shadow: 0 0 0 1px transparentize($accent_bg_color, 0.8);
+    box-shadow: inset 0 0 1px 0.5px transparentize($accent_bg_color, 0.4);
   }
 
   @if $type == 'hover' {
