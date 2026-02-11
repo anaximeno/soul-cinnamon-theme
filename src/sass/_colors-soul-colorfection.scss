@@ -1,0 +1,58 @@
+$bg_color: rgba(248, 246, 242, 0.94);
+$base_color: #f9f7f3;
+$fg_color: #1f2023;
+
+$panel_bg: rgba(242, 239, 234, 0.95);
+
+// Accent — balanced triad with warm pop
+$accent_color: #7a4cf5; // violet
+$accent_bg_color: #f38b3c; // amber for hover/pressed backgrounds
+
+$selected_bg_color: #e5def5;
+$selected_fg_color: #1d1a26;
+
+// Colored elements tuned for clarity
+$error_color: #d73b55;
+$error_bg_color: #f9d8dd;
+
+$success_color: #2c9c68;
+$success_bg_color: #d7efe2;
+
+$warning_color: #c17b10;
+$warning_bg_color: #f7e8cc;
+
+$destructive_bg_color: #b02b3b;
+$destructive_color: #6f1520;
+
+$notification_badge_bg_color: $accent_color;
+
+$asset_path: "light-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.78);
+$light_text_color: mix($fg_color, $bg_color, 55%);
+
+$light_bg_color: mix($bg_color, #ffffff, 85%);
+$light_base_color: mix($base_color, #ffffff, 80%);
+$lighter_bg_color: mix($bg_color, #ffffff, 72%);
+$lightest_bg_color: mix($bg_color, #ffffff, 65%);
+
+$link_color: #3a7ad9;
+
+$borders_color: #d5d0c7;
+$shadow_color: rgba(0, 0, 0, 0.12);
+
+$expo_bg_color: rgba(0, 0, 0, 0.40);
+
+$tooltip_bg_color: rgba(255, 255, 255, 0.96);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 45%);
+
+$osd_bg_color: rgba(30, 26, 34, 0.85);
+$osd_fg_color: #f7f6f4;
+
+// Workspace switcher window representation
+$workspace_window_color: $fg_color;

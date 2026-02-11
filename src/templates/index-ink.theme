@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Soul Ink
+Comment=A Cinnamon theme with an e-ink inspired, low-distraction palette.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Soul-Ink
+MetacityTheme=Soul-Ink
+IconTheme=Mint-Y
+CursorTheme=X-Cursor-Pro-Light
+ButtonLayout=:minimize,maximize,close

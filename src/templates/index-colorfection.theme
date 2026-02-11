@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Soul Colorfection
+Comment=A Cinnamon theme tuned for harmonious, vibrant balance with clear signal colors.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Soul-Colorfection
+MetacityTheme=Soul-Colorfection
+IconTheme=Mint-Y
+CursorTheme=X-Cursor-Pro-Light
+ButtonLayout=:minimize,maximize,close

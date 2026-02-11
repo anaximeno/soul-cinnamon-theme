@@ -1,0 +1,58 @@
+$bg_color: rgba(242, 241, 235, 0.92);
+$base_color: #f5f3eb;
+$fg_color: #171714;
+
+$panel_bg: rgba(234, 232, 224, 0.94);
+
+// Accent
+$accent_color: #2f3b46;
+$accent_bg_color: #465661;
+
+$selected_bg_color: #d6d2c8;
+$selected_fg_color: #0f0f0d;
+
+// Colored elements
+$error_color: #7f2d2a;
+$error_bg_color: #eeddd9;
+
+$success_color: #2f5d3d;
+$success_bg_color: #d6e4d9;
+
+$warning_color: #6a5a2c;
+$warning_bg_color: #e7e1cf;
+
+$destructive_bg_color: #8f332f;
+$destructive_color: #6b1f1b;
+
+$notification_badge_bg_color: $accent_color;
+
+$asset_path: "light-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.78);
+$light_text_color: mix($fg_color, $bg_color, 55%);
+
+$light_bg_color: mix($bg_color, #ffffff, 80%);
+$light_base_color: mix($base_color, #ffffff, 75%);
+$lighter_bg_color: mix($bg_color, #ffffff, 65%);
+$lightest_bg_color: mix($bg_color, #ffffff, 55%);
+
+$link_color: $accent_color;
+
+$borders_color: #c5c1b6;
+$shadow_color: rgba(0, 0, 0, 0.12);
+
+$expo_bg_color: rgba(0, 0, 0, 0.40);
+
+$tooltip_bg_color: rgba(255, 255, 255, 0.95);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 50%);
+
+$osd_bg_color: rgba(22, 22, 22, 0.82);
+$osd_fg_color: #f2f2f0;
+
+// Workspace switcher window representation
+$workspace_window_color: $fg_color;

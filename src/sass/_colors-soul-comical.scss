@@ -1,0 +1,58 @@
+$bg_color: rgba(252, 248, 240, 0.95);
+$base_color: #fff7ec;
+$fg_color: #242027;
+
+$panel_bg: rgba(247, 237, 224, 0.94);
+
+// Accent — punchy comic duo
+$accent_color: #ff5fa2; // bubblegum pink
+$accent_bg_color: #22c7c7; // aqua flip for hover/pressed
+
+$selected_bg_color: #ffe6f3;
+$selected_fg_color: #1f1824;
+
+// Colored elements with playful clarity
+$error_color: #f05b5b;
+$error_bg_color: #ffe0e0;
+
+$success_color: #3fc66f;
+$success_bg_color: #ddf4e5;
+
+$warning_color: #f4b400;
+$warning_bg_color: #fff1cd;
+
+$destructive_bg_color: #e13c56;
+$destructive_color: #8c1a2c;
+
+$notification_badge_bg_color: $accent_color;
+
+$asset_path: "light-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.8);
+$light_text_color: mix($fg_color, $bg_color, 55%);
+
+$light_bg_color: mix($bg_color, #ffffff, 85%);
+$light_base_color: mix($base_color, #ffffff, 80%);
+$lighter_bg_color: mix($bg_color, #ffffff, 70%);
+$lightest_bg_color: mix($bg_color, #ffffff, 62%);
+
+$link_color: #2d7bdc;
+
+$borders_color: #e3d8ca;
+$shadow_color: rgba(0, 0, 0, 0.1);
+
+$expo_bg_color: rgba(0, 0, 0, 0.38);
+
+$tooltip_bg_color: rgba(255, 255, 255, 0.96);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 45%);
+
+$osd_bg_color: rgba(32, 26, 35, 0.82);
+$osd_fg_color: #fcf8f0;
+
+// Workspace switcher window representation
+$workspace_window_color: $fg_color;

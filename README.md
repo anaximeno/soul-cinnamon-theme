@@ -33,18 +33,26 @@ If you're on a debian based system you can install the dependencies with:
 apt install sassc
 ```
 
-To build both Light and Dark variants:
+To build all variants (Dark, Light, Ink, Matrix, Colorfection, Comical):
 
 ```bash
 make
 ```
 
-To build specific variant:
+To build a specific variant:
 
 ```bash
 make dark
 # or
 make light
+# or
+make ink
+# or
+make matrix
+# or
+make colorfection
+# or
+make comical
 ```
 
 ## Testing
@@ -63,4 +71,4 @@ make install
 
 ## Customization
 
-Edit `src/sass/_colors-soul-dark.scss` or `src/sass/_colors-soul-light.scss` to adjust the color palette. Edit `src/sass/_soul-main.scss` or widgets for structural changes.
+Edit `src/sass/_colors-soul-dark.scss`, `src/sass/_colors-soul-light.scss`, `src/sass/_colors-soul-ink.scss`, `src/sass/_colors-soul-matrix.scss`, `src/sass/_colors-soul-colorfection.scss`, or `src/sass/_colors-soul-comical.scss` to adjust the color palette. Edit `src/sass/_soul-main.scss` or widgets for structural changes.
