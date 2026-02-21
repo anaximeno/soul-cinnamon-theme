@@ -38,7 +38,7 @@ $light_base_color: mix($base_color, #ffffff, 90%);
 $lighter_bg_color: mix($bg_color, #ffffff, 85%);
 $lightest_bg_color: mix($bg_color, #ffffff, 80%);
 
-$link_color: $accent_color;
+$link_color: #7eb2d4;
 
 $borders_color: #555555;
 $shadow_color: rgba(0, 0, 0, 0.40);
@@ -49,7 +49,7 @@ $expo_bg_color: transparentize($bg_color, 0.1);
 
 $tooltip_bg_color: rgba(30, 30, 30, 0.95);
 $tooltip_fg_color: $fg_color;
-$tooltip_border_color: lighten($bg_color, 10%);
+$tooltip_border_color: $borders_color;
 
 $osd_bg_color: rgba(24, 24, 24, 0.88);
 $osd_fg_color: $fg_color;
