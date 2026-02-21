@@ -51,7 +51,7 @@
       .dialog-list-item-title { font-weight: bold; }
       .dialog-list-item-description {
         @extend %caption;
-        color: darken($fg_color, 5%);
+        color: $light_text_color;
       }
     }
   }
@@ -109,7 +109,7 @@
     @extend %caption;
 
     text-align: center;
-    color: darken($fg_color, 20%);
+    color: $light_text_color;
 
     &.error { color: $error_color; }
   }

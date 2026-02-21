@@ -87,7 +87,7 @@ StScrollBar {
   }
 
   StBin#trough {
-    background-color: transparentize($base_color, 0.9);
+    background-color: transparentize($fg_color, 0.9);
     border-radius: $base_border_radius;
   }
 
