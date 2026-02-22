@@ -31,7 +31,7 @@ $ws_dot_inactive: $ws_indicator_height / 6;
   .level {
     min-width: 160px;
     -barlevel-height: $barlevel_height;
-    -barlevel-background-color: $base_color;
+    -barlevel-background-color: darken($base_color, 10%);
     -barlevel-active-background-color: $fg_color;
     -barlevel-amplify-color: $warning_color;
     -barlevel-amplify-separator-width: $base_padding * 0.5;
@@ -42,7 +42,7 @@ $ws_dot_inactive: $ws_indicator_height / 6;
 
   .level-bar {
     border-radius: $base_border_radius;
-    background-color: $fg_color;
+    background-color: darken($fg_color, 10%);
   }
 }
 
