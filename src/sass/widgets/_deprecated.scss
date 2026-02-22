@@ -3,12 +3,7 @@
 $menu_outer_padding: 9px;
 
 %start_menu_button {
-  padding: 6px;
-  spacing: $base_margin;
-  border-radius: $base_border_radius;
-  border: 1px solid transparent;
-  transition-duration: 200ms;
-  transition-property: background-color, border-color, color, box-shadow;
+  @extend %menu_button_base;
 }
 
 

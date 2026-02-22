@@ -22,7 +22,7 @@ $applet_padding: 6px;
     &:highlight { background-color: transparentize($error_bg_color, 0.5); }
   }
 
-  &-label { font-weight: bold; }
+  &-label { font-weight: 600; }
 
   &-separator {
     padding: 1px 4px;
@@ -211,10 +211,10 @@ $applet_padding: 6px;
 
   .workspace {
     background-color: $base_color;
-    box-shadow: inset 0 0 1px 1.25px transparentize($accent_bg_color, 0.6);
+    box-shadow: inset 0 0 1px 1px transparentize($accent_bg_color, 0.7);
 
     &:active {
-      box-shadow: inset 0 0 1px 1.5px transparentize($accent_color, 0.2);
+      box-shadow: inset 0 0 1px 1px transparentize($accent_color, 0.2);
 
       .windows {
         -active-window-background: transparentize($workspace_window_color, 0.6);

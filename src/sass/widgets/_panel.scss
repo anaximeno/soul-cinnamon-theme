@@ -72,15 +72,8 @@
 
     &:entered { background-color: transparentize($error_color, 0.4); }
   }
-
-  &-status-button {} // used by the keyboard applet but see no reason for it
 }
 
-// these are available but we aren't using them here
-.panel-corner {}
-.panel-corner:overview {}
-.panel-corner:active {}
-.panel-corner:focus {}
 
 // this is needed to highlight a specific panel when using the panel settings
 #panel:highlight { background-color: mix($panel_bg, $error_bg_color, 75%); }
