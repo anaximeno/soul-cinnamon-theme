@@ -24,7 +24,7 @@ stage {
   border: 1px solid $borders_color;
   caret-color: $fg_color;
   selected-color: $selected_fg_color;
-  selection-background-color: $accent_bg_color;
+  selection-background-color: $selected_bg_color;
   caret-size: 1px;
   transition-duration: 200ms;
   transition-property: background-color, border-color, color, box-shadow;
