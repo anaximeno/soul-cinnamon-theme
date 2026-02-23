@@ -18,6 +18,11 @@ $applet_padding: 6px;
       background-color: $lightest_bg_color;
       transition-duration: 150ms;
     }
+    &:checked {
+      box-shadow: inset 0 0 1px 1px transparentize($accent_bg_color, 0.6);
+      background-color: $lightest_bg_color;
+      transition-duration: 150ms;
+    }
 
     &:highlight { background-color: transparentize($error_bg_color, 0.5); }
   }
