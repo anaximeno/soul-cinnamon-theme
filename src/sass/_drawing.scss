@@ -45,7 +45,6 @@
   @if $type == 'hover' {
     background-color: $hover_entry_bg_color;
     color: $entry_fg_color;
-    border-color: mix($borders_color, $accent_bg_color, 50%);
   }
 
   @if $type == 'insensitive' {
@@ -111,7 +110,6 @@
   @else if $type == 'hover' {
     color: $tc;
     background-color: $hover_button_bg_color;
-    border: 1px solid mix($borders_color, $accent_bg_color, 60%);
   }
 
   // active button
