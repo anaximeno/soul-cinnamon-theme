@@ -24,9 +24,6 @@ $appmenu_small_padding: $base_padding;
 $appmenu_padding: $base_padding * 2;
 $appmenu_large_padding: $base_padding * 3;
 
-$system_button_normal_hover_bg_color: if($variant == "dark", lighten($light_bg_color, 4%), darken($light_bg_color, 10%));
-$system_button_shutdown_hover_bg_color: lighten($destructive_bg_color, 10%);
-
 %appmenu_button {
   @extend %menu_button_base;
 }
@@ -87,10 +84,10 @@ $system_button_shutdown_hover_bg_color: lighten($destructive_bg_color, 10%);
       transition-duration: 200ms;
       transition-property: background-color, border-color, box-shadow;
 
-      &-lock:hover { background-color: $system_button_normal_hover_bg_color; }
-      &-logout:hover { background-color: $system_button_normal_hover_bg_color; }
+      &-lock:hover { background-color: adjust-color-variant($light_bg_color, 10%); }
+      &-logout:hover { background-color: adjust-color-variant($light_bg_color, 10%); }
       &-shutdown { background-color: $destructive_bg_color; color: #fff; }
-      &-shutdown:hover { background-color: $system_button_shutdown_hover_bg_color; }
+      &-shutdown:hover { background-color: adjust-color-variant($destructive_bg_color, 10%); }
     }
   }
 
@@ -124,9 +121,9 @@ $system_button_shutdown_hover_bg_color: lighten($destructive_bg_color, 10%);
 
     &-shutdown { background-color: $destructive_bg_color; color: #fff; }
 
-    &-lock:hover { background-color: $system_button_normal_hover_bg_color; }
-    &-logout:hover { background-color: $system_button_normal_hover_bg_color; }
-    &-shutdown:hover { background-color: $system_button_shutdown_hover_bg_color; }
+    &-lock:hover { background-color: adjust-color-variant($light_bg_color, 10%); }
+    &-logout:hover { background-color: adjust-color-variant($light_bg_color, 10%); }
+    &-shutdown:hover { background-color: adjust-color-variant($destructive_bg_color, 10%); }
   }
 
   &-application-button {
