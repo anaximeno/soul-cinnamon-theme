@@ -3,9 +3,11 @@
 .panel {
 
   &-top, &-bottom, &-left, &-right{
-    font-weight: 600;
+    font-weight: 500;
     color: $fg_color;
     background-color: $panel_bg;
+    transition-duration: 200ms;
+    transition-property: background-color, box-shadow;
   }
 
   &Left {
