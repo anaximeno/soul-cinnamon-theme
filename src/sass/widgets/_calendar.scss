@@ -116,6 +116,7 @@
   &-today {
     background-color: $lightest_bg_color;
     border: 1px solid $accent_bg_color;
+    box-shadow: active-inset-shadow-mix($lightest_bg_color, $accent_bg_color, 75%, 1px, 0.5px);
 
     &:hover { background-color: $lighter_bg_color; }
 
@@ -131,6 +132,7 @@
     &:selected {
       background-color: $light_bg_color;
       border-color: $accent_bg_color;
+      box-shadow: active-inset-shadow-mix($light_bg_color, $accent_bg_color, 75%, 1px, 0.5px);
     }
   }
 
@@ -180,7 +182,7 @@
     border: 1px solid transparent;
 
     &:hover {
-      background-color: adjust-color-variant($bg_color, 15%);
+      background-color: adjust-color-variant-inverse($bg_color, 5%);
       border-color: $borders_color;
     }
   }
