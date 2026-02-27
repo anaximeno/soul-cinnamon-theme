@@ -155,7 +155,7 @@ $applet_padding: 6px;
   .slider {
     height: $base_padding;
     -slider-height: $base_padding;
-    -slider-background-color: darken($base_color, 5%);
+    -slider-background-color: adjust-color-variant-inverse($base_color, 5%);
     -slider-active-background-color: $fg_color;
     -slider-border-color: transparent;
     -slider-active-border-color: transparent;
@@ -206,7 +206,7 @@ $applet_padding: 6px;
   &:hover { background-color: $light_bg_color; }
 
   &:shaded { // this is a workspace with no open windows
-    background-color: darken($bg_color, 5%);
+    background-color: adjust-color-variant-inverse($bg_color, 5%);
   }
 }
 

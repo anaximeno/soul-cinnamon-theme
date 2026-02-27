@@ -13,7 +13,7 @@
   color: $link_color;
 
   &:hover {
-    color: lighten($link_color, 10%);
+    color: adjust-color-variant($link_color, 10%);
   }
 }
 

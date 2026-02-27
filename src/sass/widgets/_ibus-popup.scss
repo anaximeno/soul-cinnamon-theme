@@ -19,7 +19,7 @@ $popover_arrow_height: 12px;
 
 .candidate-index {
   padding: 0 0.5em 0 0;
-  color: darken($fg_color,10%);
+  color: adjust-color-variant-inverse($fg_color, 10%);
 }
 
 .candidate-box {

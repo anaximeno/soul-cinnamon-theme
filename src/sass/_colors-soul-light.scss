@@ -26,7 +26,7 @@ $warning_bg_color: #f3e19a;
 $destructive_bg_color: #e74c3c;
 $destructive_color: #c0392b;
 
-$notification_badge_bg_color: $error_color;
+$notification_badge_bg_color: #d08a3a;
 
 $asset_path: "light-assets";
 $common_assets: "common-assets";
@@ -43,7 +43,7 @@ $lightest_bg_color: darken($bg_color, 12%);
 $link_color: #1f6fb2;
 
 $borders_color: #c8c8c8;
-$shadow_color: rgba(0, 0, 0, 0.15);
+$shadow_color: rgba(0, 0, 0, 0.10);
 
 $expo_bg_color: rgba(0, 0, 0, 0.45);
 

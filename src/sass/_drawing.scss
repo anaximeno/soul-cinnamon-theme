@@ -5,6 +5,25 @@
   @return round($em_value) / 1000 * 1em;
 }
 
+// Variant-aware color adjustment function
+// Lightens colors in dark mode, darkens in light mode for better contrast
+@function adjust-color-variant($color, $amount: 5%) {
+  @if $variant == "dark" {
+    @return lighten($color, $amount);
+  } @else {
+    @return darken($color, $amount);
+  }
+}
+
+// Inverse variant adjustment (darkens in dark mode, lightens in light mode)
+@function adjust-color-variant-inverse($color, $amount: 5%) {
+  @if $variant == "dark" {
+    @return darken($color, $amount);
+  } @else {
+    @return lighten($color, $amount);
+  }
+}
+
 // Mixin to convert provided font size in pt to em units
 @mixin fontsize($size, $base: 16px, $unit: pt) {
   // if pt, convert into unitless value with the assumption: 1pt = 1.091px
@@ -27,7 +46,7 @@
 
   $insensitive_factor: 3%;
 
-  $insensitive_entry_bg_color: darken($entry_bg_color, $insensitive_factor);
+  $insensitive_entry_bg_color: adjust-color-variant-inverse($entry_bg_color, $insensitive_factor);
 
   // normal
   @if $type == 'normal' {
@@ -79,13 +98,13 @@
   $hover_button_bg_color: $lighter_bg_color;
   $active_button_bg_color: $lightest_bg_color;
   $checked_button_bg_color: $lightest_bg_color;
-  $insensitive_button_bg_color: darken($button_bg_color, $insensitive_factor);
+  $insensitive_button_bg_color: adjust-color-variant-inverse($button_bg_color, $insensitive_factor);
 
   // background color mix override for default button style
   @if $style == 'default' {
-    $hover_button_bg_color: lighten($button_bg_color, 10%);
-    $active_button_bg_color: darken($button_bg_color, 5%);
-    $checked_button_bg_color: darken($button_bg_color, 5%);
+    $hover_button_bg_color: adjust-color-variant($button_bg_color, 10%);
+    $active_button_bg_color: adjust-color-variant-inverse($button_bg_color, 5%);
+    $checked_button_bg_color: adjust-color-variant-inverse($button_bg_color, 5%);
   }
 
   // flat style overrides

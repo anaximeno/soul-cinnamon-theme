@@ -180,7 +180,7 @@
     border: 1px solid transparent;
 
     &:hover {
-      background-color: lighten($bg_color, 15%);
+      background-color: adjust-color-variant($bg_color, 15%);
       border-color: $borders_color;
     }
   }
