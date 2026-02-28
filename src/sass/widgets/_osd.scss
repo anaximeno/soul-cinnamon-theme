@@ -60,14 +60,14 @@ $ws_dot_inactive: $ws_indicator_height / 6;
 
   min-width: 120px;
   margin-bottom: 0.8em;
-  border-radius: $modal_dialog_radius; // Used to be 9999px
+  border-radius: $modal_dialog_radius;
   font-weight: 500;
   padding: $base_padding * 1.5 $base_padding * 4 0 $base_padding * 4;
 
   &-indicator-box { spacing: $base_padding * 1.5; }
 
   &-indicator {
-    background-color: transparentize($fg_color, 0.5);
+    background-color: transparentize($fg_color, 0.4);
     padding: $ws_dot_inactive / 2;
     margin: ($ws_indicator_height - $ws_dot_inactive) / 2;
     border-radius: $ws_indicator_height;
