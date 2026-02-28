@@ -191,7 +191,7 @@ stage {
   height: 1em;
   min-width: 14em;
   -slider-height: 0.375em;
-  -slider-background-color: $light_bg_color;
+  -slider-background-color: adjust-color-variant-inverse($base_color, 10%);
   -slider-active-background-color: $fg_color;
   -slider-border-color: transparent;
   -slider-active-border-color: transparent;
