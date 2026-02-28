@@ -1,0 +1,66 @@
+$variant: "dark";
+
+// Evergreen variant: deep forest green as the background base.
+// Not lime, not emerald, not hunter — the green of old-growth forest floor
+// at dusk. Desaturated enough that it never reads as garish, saturated
+// enough that it's unmistakably green. HSL ~135°, ~28%, ~10%.
+
+$bg_color: rgba(20, 30, 20, 0.90);
+$base_color: #131d13;
+$fg_color: #d8e8d4;
+
+$panel_bg: rgba(10, 18, 10, 0.97);
+
+// Accent — muted sage, lighter branch of the same green family
+$accent_color: #80a878;
+$accent_bg_color: #5e8858;
+
+$selected_bg_color: #5e8858;
+$selected_fg_color: #ffffff;
+
+// Colored elements
+$error_color: #cf6a6a;
+$error_bg_color: #7a2a2a;
+
+$success_color: #80c060;
+$success_bg_color: #3a6830;
+
+$warning_color: #d8c050;
+$warning_bg_color: #8a7020;
+
+$destructive_bg_color: #8a2020;
+$destructive_color: #e86060;
+
+$notification_badge_bg_color: #c88038;
+
+$asset_path: "dark-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.85);
+$light_text_color: mix($fg_color, $bg_color, 68%);
+
+// Step ladder mixed against muted sage so hover/active stays in green space.
+$light_bg_color: mix($bg_color, #90b888, 90%);
+$light_base_color: mix($base_color, #90b888, 90%);
+$lighter_bg_color: mix($bg_color, #90b888, 82%);
+$lightest_bg_color: mix($bg_color, #90b888, 74%);
+
+$link_color: #78b8a0;
+
+$borders_color: #284028;
+$shadow_color: rgba(0, 0, 0, 0.50);
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 40%);
+
+$expo_bg_color: transparentize($bg_color, 0.1);
+
+$tooltip_bg_color: rgba(12, 20, 12, 0.97);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$osd_bg_color: rgba(12, 20, 12, 0.92);
+$osd_fg_color: $fg_color;
+
+// Workspace switcher window representation
+$workspace_window_color: $fg_color;

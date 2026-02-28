@@ -1,0 +1,67 @@
+$variant: "dark";
+
+// Material variant: inspired by Material You dark surfaces.
+// Backgrounds carry a faint violet-grey undertone — the specific quality of
+// Material Design's tonal surface system. Not purple, not grey — the barely-
+// there purple that makes Material You dark mode feel distinctive.
+// HSL ~260°, ~10%, ~12% — the ghost of a purple tint.
+
+$bg_color: rgba(28, 27, 34, 0.90);
+$base_color: #1c1b22;
+$fg_color: #e6e1ec;
+
+$panel_bg: rgba(16, 15, 22, 0.97);
+
+// Accent — Material You tertiary: a muted lavender
+$accent_color: #a898c8;
+$accent_bg_color: #7b68a8;
+
+$selected_bg_color: #7b68a8;
+$selected_fg_color: #ffffff;
+
+// Colored elements — Material You tonal semantic colors
+$error_color: #f28b82;
+$error_bg_color: #8c1d18;
+
+$success_color: #81c995;
+$success_bg_color: #1e6a40;
+
+$warning_color: #fdd663;
+$warning_bg_color: #7a5900;
+
+$destructive_bg_color: #8c1d18;
+$destructive_color: #f28b82;
+
+$notification_badge_bg_color: #c07838;
+
+$asset_path: "dark-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.85);
+$light_text_color: mix($fg_color, $bg_color, 66%);
+
+// Step ladder mixed against muted lavender — hover states stay in purple-grey.
+$light_bg_color: mix($bg_color, #a898c8, 91%);
+$light_base_color: mix($base_color, #a898c8, 91%);
+$lighter_bg_color: mix($bg_color, #a898c8, 83%);
+$lightest_bg_color: mix($bg_color, #a898c8, 75%);
+
+$link_color: #a8c8f8;
+
+$borders_color: #3a3848;
+$shadow_color: rgba(0, 0, 0, 0.50);
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 40%);
+
+$expo_bg_color: transparentize($bg_color, 0.1);
+
+$tooltip_bg_color: rgba(18, 17, 24, 0.97);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$osd_bg_color: rgba(18, 17, 24, 0.92);
+$osd_fg_color: $fg_color;
+
+// Workspace switcher window representation
+$workspace_window_color: $fg_color;

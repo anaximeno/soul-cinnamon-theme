@@ -1,0 +1,67 @@
+$variant: "dark";
+
+// Blues variant: slightly desaturated navy as the background base.
+// Not electric, not teal — a committed navy with just enough grey pulled in
+// to keep it livable. Blue is the identity, not just the temperature.
+// Base HSL sits around hsl(228, 48%, 14%) — clearly navy, not charcoal.
+
+$bg_color: rgba(19, 25, 52, 0.90);
+$base_color: #141c3a;
+$fg_color: #dde2f2;
+
+$panel_bg: rgba(11, 15, 34, 0.97);
+
+// Accent — cool silver-blue, reads as a lighter navy swatch
+$accent_color: #8898c0;
+$accent_bg_color: #6070a8;
+
+$selected_bg_color: #6070a8;
+$selected_fg_color: #ffffff;
+
+// Colored elements
+$error_color: #cf6a6a;
+$error_bg_color: #7a2a2a;
+
+$success_color: #7aaa60;
+$success_bg_color: #3a6840;
+
+$warning_color: #d8c050;
+$warning_bg_color: #8a7020;
+
+$destructive_bg_color: #8a2020;
+$destructive_color: #e86060;
+
+$notification_badge_bg_color: #c88038;
+
+$asset_path: "dark-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.85);
+$light_text_color: mix($fg_color, $bg_color, 68%);
+
+// Step ladder: mixed against a mid navy-blue so hover/active states
+// stay firmly in navy space rather than washing out to grey.
+$light_bg_color: mix($bg_color, #a0b0d8, 90%);
+$light_base_color: mix($base_color, #a0b0d8, 90%);
+$lighter_bg_color: mix($bg_color, #a0b0d8, 82%);
+$lightest_bg_color: mix($bg_color, #a0b0d8, 74%);
+
+$link_color: #70aadc;
+
+$borders_color: #2c3a68;
+$shadow_color: rgba(0, 0, 0, 0.50);
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 40%);
+
+$expo_bg_color: transparentize($bg_color, 0.1);
+
+$tooltip_bg_color: rgba(14, 19, 42, 0.97);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$osd_bg_color: rgba(14, 19, 42, 0.92);
+$osd_fg_color: $fg_color;
+
+// Workspace switcher window representation
+$workspace_window_color: $fg_color;

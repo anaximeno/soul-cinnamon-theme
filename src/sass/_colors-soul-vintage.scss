@@ -1,0 +1,67 @@
+$variant: "dark";
+
+// Vintage variant: aged film, warm amber-brown backgrounds.
+// The quality of old photographs, darkroom amber safelights, warm papyrus.
+// Not orange, not red-brown — the specific warmth of oxidized amber in shadow.
+// HSL ~36°, ~32%, ~10% — warmth without burn.
+
+$bg_color: rgba(32, 24, 14, 0.90);
+$base_color: #201810;
+$fg_color: #ead8b4;
+
+$panel_bg: rgba(20, 14, 8, 0.97);
+
+// Accent — warm amber, antique gold
+$accent_color: #c8a060;
+$accent_bg_color: #a07838;
+
+$selected_bg_color: #a07838;
+$selected_fg_color: #201810;
+
+// Colored elements — warmed toward the palette
+$error_color: #d07060;
+$error_bg_color: #802818;
+
+$success_color: #98b870;
+$success_bg_color: #406030;
+
+$warning_color: #d8b840;
+$warning_bg_color: #907020;
+
+$destructive_bg_color: #882010;
+$destructive_color: #e06858;
+
+$notification_badge_bg_color: #c06820;
+
+$asset_path: "dark-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.85);
+$light_text_color: mix($fg_color, $bg_color, 65%);
+
+// Step ladder mixed against warm amber — states stay in amber-warm space,
+// never bleeding into neutral grey.
+$light_bg_color: mix($bg_color, #b88840, 90%);
+$light_base_color: mix($base_color, #b88840, 90%);
+$lighter_bg_color: mix($bg_color, #b88840, 81%);
+$lightest_bg_color: mix($bg_color, #b88840, 72%);
+
+$link_color: #98b8a0;
+
+$borders_color: #503820;
+$shadow_color: rgba(0, 0, 0, 0.55);
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 40%);
+
+$expo_bg_color: transparentize($bg_color, 0.1);
+
+$tooltip_bg_color: rgba(22, 16, 8, 0.97);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$osd_bg_color: rgba(22, 16, 8, 0.92);
+$osd_fg_color: $fg_color;
+
+// Workspace switcher window representation
+$workspace_window_color: $fg_color;

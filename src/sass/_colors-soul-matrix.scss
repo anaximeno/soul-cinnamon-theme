@@ -1,0 +1,66 @@
+$variant: "dark";
+
+// Matrix variant: phosphor-green CRT terminal aesthetic.
+// Backgrounds are near-black with an unmistakable green cast — not dark green,
+// the specific quality of a powered-off monitor with green phosphor residue.
+// HSL ~120°, 33%, 5%. The green only reveals itself in contrast with light elements.
+
+$bg_color: rgba(8, 16, 8, 0.92);
+$base_color: #050d05;
+$fg_color: #a8e888;
+
+$panel_bg: rgba(4, 8, 4, 0.97);
+
+// Accent — classic phosphor glow: green bright enough to feel lit
+$accent_color: #60d840;
+$accent_bg_color: #34a820;
+
+$selected_bg_color: #34a820;
+$selected_fg_color: #050d05;
+
+// Colored elements — all terminal-green shifted
+$error_color: #e86060;
+$error_bg_color: #701818;
+
+$success_color: #80e850;
+$success_bg_color: #186818;
+
+$warning_color: #e0d040;
+$warning_bg_color: #787010;
+
+$destructive_bg_color: #782010;
+$destructive_color: #f07060;
+
+$notification_badge_bg_color: #a07020;
+
+$asset_path: "dark-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.85);
+$light_text_color: mix($fg_color, $bg_color, 65%);
+
+// Step ladder mixed against phosphor green — states glow greener as they activate.
+$light_bg_color: mix($bg_color, #40b828, 91%);
+$light_base_color: mix($base_color, #40b828, 91%);
+$lighter_bg_color: mix($bg_color, #40b828, 83%);
+$lightest_bg_color: mix($bg_color, #40b828, 75%);
+
+$link_color: #60d8a0;
+
+$borders_color: #1a3c1a;
+$shadow_color: rgba(0, 0, 0, 0.60);
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 38%);
+
+$expo_bg_color: transparentize($bg_color, 0.1);
+
+$tooltip_bg_color: rgba(4, 10, 4, 0.97);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$osd_bg_color: rgba(4, 10, 4, 0.94);
+$osd_fg_color: $fg_color;
+
+// Workspace switcher window representation
+$workspace_window_color: $fg_color;

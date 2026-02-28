@@ -1,0 +1,68 @@
+$variant: "dark";
+
+// Cupertino variant: faithful to Apple macOS dark mode.
+// The defining quality of Apple's surface system: warm-neutral near-black,
+// never cold. Backgrounds sit at Apple's exact system values (#1c1c1e family).
+// The accent breaks Soul's achromatic rule — Cupertino earns its system blue.
+// HSL ~240°, 3%, 12% — the barely-there cool that reads as "premium neutral".
+
+$bg_color: rgba(28, 28, 30, 0.90);
+$base_color: #1c1c1e;
+$fg_color: #f5f5f7;
+
+$panel_bg: rgba(18, 18, 20, 0.97);
+
+// Accent — Apple system blue, the soul of Cupertino's identity
+$accent_color: #6eb4ff;
+$accent_bg_color: #0a7aff;
+
+$selected_bg_color: #0a7aff;
+$selected_fg_color: #ffffff;
+
+// Colored elements — Apple semantic system colors, dark mode variants
+$error_color: #ff6961;
+$error_bg_color: #8c1a14;
+
+$success_color: #30d158;
+$success_bg_color: #1a6830;
+
+$warning_color: #ffd60a;
+$warning_bg_color: #7a6000;
+
+$destructive_bg_color: #8c1a14;
+$destructive_color: #ff6961;
+
+$notification_badge_bg_color: #ff9f0a;
+
+$asset_path: "dark-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.85);
+$light_text_color: mix($fg_color, $bg_color, 60%);
+
+// Apple's surface steps are linear lightness lifts; mixed against a slightly
+// cool neutral to preserve Apple's characteristic warmth-as-absence-of-cold.
+$light_bg_color: mix($bg_color, #b0b0b8, 91%);
+$light_base_color: mix($base_color, #b0b0b8, 91%);
+$lighter_bg_color: mix($bg_color, #b0b0b8, 83%);
+$lightest_bg_color: mix($bg_color, #b0b0b8, 75%);
+
+$link_color: #4eb0ff;
+
+$borders_color: #3a3a3c;
+$shadow_color: rgba(0, 0, 0, 0.45);
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 38%);
+
+$expo_bg_color: transparentize($bg_color, 0.1);
+
+$tooltip_bg_color: rgba(44, 44, 46, 0.97);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$osd_bg_color: rgba(36, 36, 38, 0.92);
+$osd_fg_color: $fg_color;
+
+// Workspace switcher window representation
+$workspace_window_color: $fg_color;

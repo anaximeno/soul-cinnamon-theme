@@ -1,0 +1,66 @@
+$variant: "dark";
+
+// Gruvbox variant: faithful to the Gruvbox DNA — warm ochre-brown backgrounds
+// with a retro, ink-on-parchment quality. The warmth comes from a brown-amber
+// undertone, not from red. Backgrounds sit at roughly HSL ~38°, ~22%, ~14%.
+// fg is the classic gruvbox warm cream.
+
+$bg_color: rgba(40, 36, 28, 0.90);
+$base_color: #1d1a14;
+$fg_color: #ebdbb2;
+
+$panel_bg: rgba(28, 24, 18, 0.97);
+
+// Accent — gruvbox muted yellow, warm but not garish
+$accent_color: #c8a850;
+$accent_bg_color: #a88838;
+
+$selected_bg_color: #a88838;
+$selected_fg_color: #1d1a14;
+
+// Colored elements — gruvbox-toned semantic colors
+$error_color: #fb4934;
+$error_bg_color: #9d0006;
+
+$success_color: #b8bb26;
+$success_bg_color: #427b58;
+
+$warning_color: #fabd2f;
+$warning_bg_color: #b57614;
+
+$destructive_bg_color: #cc241d;
+$destructive_color: #fb4934;
+
+$notification_badge_bg_color: #d65d0e;
+
+$asset_path: "dark-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.85);
+$light_text_color: mix($fg_color, $bg_color, 65%);
+
+// Step ladder mixed against warm ochre so states stay in warm space.
+$light_bg_color: mix($bg_color, #c0a860, 90%);
+$light_base_color: mix($base_color, #c0a860, 90%);
+$lighter_bg_color: mix($bg_color, #c0a860, 81%);
+$lightest_bg_color: mix($bg_color, #c0a860, 72%);
+
+$link_color: #83a598;
+
+$borders_color: #4a4030;
+$shadow_color: rgba(0, 0, 0, 0.50);
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 40%);
+
+$expo_bg_color: transparentize($bg_color, 0.1);
+
+$tooltip_bg_color: rgba(24, 20, 14, 0.97);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$osd_bg_color: rgba(24, 20, 14, 0.92);
+$osd_fg_color: $fg_color;
+
+// Workspace switcher window representation
+$workspace_window_color: $fg_color;

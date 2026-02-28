@@ -1,0 +1,66 @@
+$variant: "dark";
+
+// Metalic variant: cold industrial steel. Near-neutral dark backgrounds with
+// a controlled cool bias — think brushed aluminium or gunmetal. Not blue, not
+// grey — the specific temperature of raw metal under studio light.
+// HSL ~210°, ~8%, ~11% — minimally chromatic but unmistakably cold.
+
+$bg_color: rgba(24, 26, 30, 0.90);
+$base_color: #181a1e;
+$fg_color: #c8cdd8;
+
+$panel_bg: rgba(14, 16, 20, 0.97);
+
+// Accent — polished chrome: light steel with a faint blue cast
+$accent_color: #8898b0;
+$accent_bg_color: #607088;
+
+$selected_bg_color: #607088;
+$selected_fg_color: #ffffff;
+
+// Colored elements
+$error_color: #d06060;
+$error_bg_color: #702020;
+
+$success_color: #70a868;
+$success_bg_color: #306830;
+
+$warning_color: #c8b840;
+$warning_bg_color: #887018;
+
+$destructive_bg_color: #802020;
+$destructive_color: #e06060;
+
+$notification_badge_bg_color: #b07030;
+
+$asset_path: "dark-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.85);
+$light_text_color: mix($fg_color, $bg_color, 66%);
+
+// Step ladder mixed against cool steel blue — states go lighter and cooler.
+$light_bg_color: mix($bg_color, #9090b0, 91%);
+$light_base_color: mix($base_color, #9090b0, 91%);
+$lighter_bg_color: mix($bg_color, #9090b0, 83%);
+$lightest_bg_color: mix($bg_color, #9090b0, 75%);
+
+$link_color: #6898c0;
+
+$borders_color: #343840;
+$shadow_color: rgba(0, 0, 0, 0.55);
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 40%);
+
+$expo_bg_color: transparentize($bg_color, 0.1);
+
+$tooltip_bg_color: rgba(16, 18, 22, 0.97);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$osd_bg_color: rgba(16, 18, 22, 0.92);
+$osd_fg_color: $fg_color;
+
+// Workspace switcher window representation
+$workspace_window_color: $fg_color;

@@ -1,0 +1,67 @@
+$variant: "dark";
+
+// Rainbow variant: the color of all wavelengths collapsed into shadow.
+// Deep prismatic violet — what you get when light diffracts into darkness,
+// like the underside of a CD, or oil on wet asphalt at night.
+// Not purple, not magenta — the specific hue that sits between them.
+// HSL ~285°, 55%, 8%. Backgrounds are unmistakably chromatic but never loud.
+
+$bg_color: rgba(22, 10, 30, 0.90);
+$base_color: #140820;
+$fg_color: #ecdaf8;
+
+$panel_bg: rgba(12, 5, 18, 0.97);
+
+// Accent — iridescent rose-violet, the brightest point of the prism
+$accent_color: #c070e8;
+$accent_bg_color: #8c40c0;
+
+$selected_bg_color: #8c40c0;
+$selected_fg_color: #ffffff;
+
+// Colored elements — slightly violet-shifted to stay in palette
+$error_color: #f07080;
+$error_bg_color: #801830;
+
+$success_color: #80d890;
+$success_bg_color: #206840;
+
+$warning_color: #e8d060;
+$warning_bg_color: #806820;
+
+$destructive_bg_color: #901828;
+$destructive_color: #f07880;
+
+$notification_badge_bg_color: #c07038;
+
+$asset_path: "dark-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.85);
+$light_text_color: mix($fg_color, $bg_color, 66%);
+
+// Step ladder mixed toward rose-violet — hover/active states shift prismatically.
+$light_bg_color: mix($bg_color, #b858e0, 91%);
+$light_base_color: mix($base_color, #b858e0, 91%);
+$lighter_bg_color: mix($bg_color, #b858e0, 83%);
+$lightest_bg_color: mix($bg_color, #b858e0, 75%);
+
+$link_color: #80b8f8;
+
+$borders_color: #3c1860;
+$shadow_color: rgba(0, 0, 0, 0.55);
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 38%);
+
+$expo_bg_color: transparentize($bg_color, 0.1);
+
+$tooltip_bg_color: rgba(14, 6, 20, 0.97);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$osd_bg_color: rgba(14, 6, 20, 0.94);
+$osd_fg_color: $fg_color;
+
+// Workspace switcher window representation
+$workspace_window_color: $fg_color;

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Soul Cupertino
+Comment=A Cinnamon theme with focus on consistency, adaptiveness, efficiency, and a modern look.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Soul-Cupertino
+MetacityTheme=Soul-Cupertino
+IconTheme=Mint-Y-Dark
+CursorTheme=X-Cursor-Pro-Light
+ButtonLayout=:minimize,maximize,close
