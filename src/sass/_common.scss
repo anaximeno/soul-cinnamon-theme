@@ -192,7 +192,7 @@ stage {
   min-width: 14em;
   -slider-height: 0.375em;
   -slider-background-color: adjust-color-variant-inverse($base_color, 10%);
-  -slider-active-background-color: $fg_color;
+  -slider-active-background-color: $accent_tint_color;
   -slider-border-color: transparent;
   -slider-active-border-color: transparent;
   -slider-border-width: 0;

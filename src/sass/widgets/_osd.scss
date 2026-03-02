@@ -32,7 +32,7 @@ $ws_dot_inactive: $ws_indicator_height / 6;
     min-width: 160px;
     -barlevel-height: $barlevel_height;
     -barlevel-background-color: adjust-color-variant-inverse($base_color, 10%);
-    -barlevel-active-background-color: $fg_color;
+    -barlevel-active-background-color: $accent_tint_color;
     -barlevel-amplify-color: $warning_color;
     -barlevel-amplify-separator-width: $base_padding * 0.5;
 
@@ -73,7 +73,7 @@ $ws_dot_inactive: $ws_indicator_height / 6;
     border-radius: $ws_indicator_height;
 
     &:active {
-      background-color: $accent_bg_color;
+      background-color: $accent_tint_color;
       padding: $ws_dot_active / 2;
       margin: ($ws_indicator_height - $ws_dot_active) / 2;
     }

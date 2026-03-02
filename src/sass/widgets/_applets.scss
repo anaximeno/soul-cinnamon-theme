@@ -156,7 +156,7 @@ $applet_padding: 6px;
     height: $base_padding;
     -slider-height: $base_padding;
     -slider-background-color: adjust-color-variant-inverse($base_color, 10%);
-    -slider-active-background-color: $fg_color;
+    -slider-active-background-color: $accent_tint_color;
     -slider-border-color: transparent;
     -slider-active-border-color: transparent;
     -slider-border-width: 0;
@@ -199,6 +199,7 @@ $applet_padding: 6px;
   &:outlined {
     background-color: $light_bg_color;
     color: $fg_color;
+    border-color: $accent_tint_color;
 
     &:hover { background-color: $lighter_bg_color; }
   }
@@ -216,10 +217,10 @@ $applet_padding: 6px;
 
   .workspace {
     background-color: $base_color;
-    box-shadow: active-inset-shadow-mix($lightest_bg_color, $accent_bg_color, 75%, 1px);
+    box-shadow: active-inset-shadow-mix($lightest_bg_color, $accent_tint_bg_color, 75%, 1px);
 
     &:active {
-      box-shadow: active-inset-shadow-mix($lightest_bg_color, $accent_color, 10%, 1px);
+      box-shadow: active-inset-shadow-mix($lightest_bg_color, $accent_tint_color, 10%, 1px);
 
       .windows {
         -active-window-background: transparentize($workspace_window_color, 0.7);

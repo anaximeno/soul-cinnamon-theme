@@ -61,8 +61,8 @@
   @if $type == 'focus' {
     background-color: $entry_bg_color;
     color: $entry_fg_color;
-    border-color: $accent_bg_color;
-    box-shadow: active-inset-shadow-mix($entry_bg_color, $accent_bg_color, 75%, 3px, 0.5px);
+    border: 1.5px solid $accent_tint_bg_color;
+    box-shadow: active-inset-shadow-mix($entry_bg_color, $accent_tint_bg_color, 75%, 3px, 0.5px);
   }
 
   @if $type == 'hover' {
@@ -126,7 +126,7 @@
   @if $type == 'focus' {
     color: $tc;
     background-color: $button_bg_color;
-    border: 1px solid $accent_bg_color;
+    border: 1px solid $accent_tint_color;
   }
 
   // hover button

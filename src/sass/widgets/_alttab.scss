@@ -20,10 +20,9 @@
     transition-duration: 200ms;
     transition-property: background-color, border-color, box-shadow;
 
-    // this doesn't ever seem to get used
-    &:outlined { border-color: $accent_color; }
+    &:outlined { border-color: $accent_tint_color; }
     &:selected {
-      border-color: $accent_bg_color;
+      border-color: $accent_tint_color;
       background-color: $light_bg_color;
     }
   }

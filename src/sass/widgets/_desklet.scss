@@ -2,7 +2,7 @@
 
 .desklet {
   &:highlight {
-    border: 2px solid $accent_color;
+    border: 2px solid $accent_tint_color;
     border-radius: $base_border_radius;
   }
 

@@ -38,14 +38,14 @@
 
     &:hover {
       background-color: $lightest_bg_color;
-      border-color: transparentize($accent_bg_color, 0.7);
+      border-color: transparentize($accent_tint_color, 0.7);
       transition-duration: 150ms;
     }
-    &:active { border-color: $accent_bg_color; }
+    &:active { border-color: $accent_tint_color; }
     &:focus {
       background-color: $lightest_bg_color;
-      border-color: $accent_bg_color;
-      box-shadow: active-inset-shadow-mix($lightest_bg_color, $accent_bg_color, 75%, 2px);
+      border-color: $accent_tint_color;
+      box-shadow: active-inset-shadow-mix($lightest_bg_color, $accent_tint_bg_color, 75%, 2px);
     }
 
     & .progress { background-color: transparentize($success_color, 0.2); }
@@ -197,7 +197,7 @@
     }
 
     &:focus {
-      border-color: $accent_bg_color;
+      border-color: $accent_tint_color;
       background-color: $lightest_bg_color;
     }
 

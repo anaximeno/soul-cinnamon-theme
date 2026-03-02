@@ -115,8 +115,8 @@
 
   &-today {
     background-color: $lightest_bg_color;
-    border: 1px solid $accent_bg_color;
-    box-shadow: active-inset-shadow-mix($lightest_bg_color, $accent_bg_color, 75%, 1px, 0.5px);
+    border: 1px solid $accent_tint_color;
+    box-shadow: active-inset-shadow-mix($lightest_bg_color, $accent_tint_bg_color, 75%, 1px, 0.5px);
 
     &:hover { background-color: $lighter_bg_color; }
 
@@ -131,8 +131,8 @@
 
     &:selected {
       background-color: $light_bg_color;
-      border-color: $accent_bg_color;
-      box-shadow: active-inset-shadow-mix($light_bg_color, $accent_bg_color, 75%, 1px, 0.5px);
+      border-color: $accent_tint_color;
+      box-shadow: active-inset-shadow-mix($light_bg_color, $accent_tint_bg_color, 75%, 1px, 0.5px);
     }
   }
 
