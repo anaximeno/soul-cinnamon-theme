@@ -124,13 +124,31 @@
   }
 
   &-scrollbox {
-    &.vfade {
-      -st-vfade-offset: 68px !important;
-      -st-hfade-offset: 0 !important;
+    &-scrollview {
+      &.vfade {
+        -st-vfade-offset: 68px;
+        -st-hfade-offset: 0;
+      }
+      &.hfade {
+        -st-hfade-offset: 68px;
+        -st-vfade-offset: 0;
+      }
     }
-    &.hfade {
-      -st-hfade-offset: 68px !important;
-      -st-vfade-offset: 0 !important;
+
+    &-button {
+      &-start,
+      &-end,
+      &-up,
+      &-down {
+        margin: 0;
+        padding: 0;
+        border: 1px solid $borders_color;
+        background-color: transparentize($panel_bg, 0.9);
+      }
+
+      &-icon {
+        icon-size: $scalable_icon_size;
+      }
     }
   }
 }
