@@ -23,8 +23,8 @@
     // this doesn't ever seem to get used
     &:outlined { border-color: $accent_color; }
     &:selected {
-      border-color: $accent_bg_color;
-      background-color: $light_bg_color;
+      border-color: $focus_indicator;
+      background-color: $surface_view;
     }
   }
 

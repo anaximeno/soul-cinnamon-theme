@@ -3,8 +3,8 @@
 $key_border_radius: $base_border_radius + 3px;
 
 $default_key_bg_color: $bg_color;
-$non_alpha_key_color: $light_bg_color;
-$shifted_key_color: adjust-color-variant($lightest_bg_color, 8%);
+$non_alpha_key_color: $surface_view;
+$shifted_key_color: adjust-color-variant($surface_active, 8%);
 
 #virtual-keyboard {
   background-color: $panel_bg;
@@ -32,7 +32,7 @@ $shifted_key_color: adjust-color-variant($lightest_bg_color, 8%);
   border-style: solid;
   border-radius: $key_border_radius;
 
-  background-color: adjust-color-variant($lighter_bg_color, 4%);
+  background-color: adjust-color-variant($surface_hover, 4%);
 
   &.shift-key-lowercase, &.escape-key, &.hide-key, &.non-alpha-key {
     background-color: $non_alpha_key_color;
@@ -46,11 +46,11 @@ $shifted_key_color: adjust-color-variant($lightest_bg_color, 8%);
 
   &.shift-key-uppercase {
     background-color: $shifted_key_color;
-    box-shadow: active-inset-shadow-mix($shifted_key_color, $lighter_bg_color, 60%, 4px, 1px);
+    box-shadow: active-inset-shadow-mix($shifted_key_color, $surface_hover, 60%, 4px, 1px);
   }
-  &.shift-key-uppercase:hover { background-color: $lighter_bg_color; }
+  &.shift-key-uppercase:hover { background-color: $surface_hover; }
   &.enter-key { background-color: adjust-color-variant-inverse($accent_bg_color, 4%); }
-  &.enter-key:hover { background-color: $lighter_bg_color; }
+  &.enter-key:hover { background-color: $surface_hover; }
 
   &.modifier-key {
     background-color: $non_alpha_key_color;
@@ -59,7 +59,7 @@ $shifted_key_color: adjust-color-variant($lightest_bg_color, 8%);
 
     &:latched {
       background-color: $shifted_key_color;
-      box-shadow: active-inset-shadow-mix($shifted_key_color, $lighter_bg_color, 60%, 4px, 1px);
+      box-shadow: active-inset-shadow-mix($shifted_key_color, $surface_hover, 60%, 4px, 1px);
     }
   }
 

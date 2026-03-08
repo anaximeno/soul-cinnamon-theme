@@ -21,18 +21,18 @@ $menuitem_border_radius: $base_border_radius;
   @extend %menuitem;
 
   &:hover {
-    background-color: $light_bg_color;
+    background-color: $surface_view;
     border-color: transparentize($borders_color, 0.5);
     transition-duration: 150ms;
   }
 
   &:focus {
-    background-color: $light_bg_color;
-    border-color: transparentize($accent_bg_color, 0.5);
+    background-color: $surface_view;
+    border-color: transparentize($focus_indicator, 0.5);
   }
 
   &:active {
-    background-color: $lighter_bg_color;
+    background-color: $surface_hover;
     transition-duration: 50ms;
   }
 
@@ -68,12 +68,12 @@ $menuitem_border_radius: $base_border_radius;
   .popup-menu-item {
     border-radius: 0;
     @extend %menuitem;
-    background-color: $base_color;
+    background-color: $surface_alt;
     margin: 0;
     padding: $base_padding 0 $base_padding $base_padding * 1.5;
 
     &:hover,
-    &:active { background-color: $light_base_color; }
+    &:active { background-color: $surface_alt_hover; }
 
     &:first-child {
       border-radius: $base_border_radius $base_border_radius 0 0;

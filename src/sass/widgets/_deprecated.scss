@@ -13,7 +13,7 @@ $menu_outer_padding: 9px;
 
   &-favorites-box {
     padding: $base_padding * 1.5;
-    background-color: $light_bg_color;
+    background-color: $surface_view;
     border: 1px solid transparentize(black, 0.9);
     border-radius: $base_border_radius;
   }
@@ -24,12 +24,12 @@ $menu_outer_padding: 9px;
     margin: 0 $base_padding;
 
     &:hover {
-      background-color: $lighter_bg_color;
+      background-color: $surface_hover;
       border-color: $borders_color;
     }
     &:focus {
-      background-color: $light_bg_color;
-      border-color: $accent_bg_color;
+      background-color: $surface_view;
+      border-color: $focus_indicator;
     }
   }
 
@@ -59,7 +59,7 @@ $menu_outer_padding: 9px;
 
     &-selected {
       @extend %start_menu_button;
-      background-color: $lighter_bg_color;
+      background-color: $surface_hover;
       border-color: $borders_color;
       &:highlighted { font-weight: bold; }
     }
@@ -71,17 +71,17 @@ $menu_outer_padding: 9px;
     &-label { padding: 0; }
 
     &:hover {
-      background-color: $lighter_bg_color;
+      background-color: $surface_hover;
       border-color: $borders_color;
     }
     &:focus {
-      background-color: $light_bg_color;
-      border-color: $accent_bg_color;
+      background-color: $surface_view;
+      border-color: $focus_indicator;
     }
 
     &-selected {
       @extend %start_menu_button;
-      background-color: $lighter_bg_color;
+      background-color: $surface_hover;
       border-color: $borders_color;
     }
 

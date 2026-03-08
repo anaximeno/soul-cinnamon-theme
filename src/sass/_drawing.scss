@@ -40,13 +40,10 @@
 @mixin entry($type) {
   //
   // $type:         entry type, possible values: normal, focus, hover, insensitive
-  // $c:            text color
-  // $bc:           background color
-  //
 
   $entry_fg_color: $fg_color;
-  $entry_bg_color: $light_bg_color;
-  $hover_entry_bg_color: $lighter_bg_color;
+  $entry_bg_color: $surface_view;
+  $hover_entry_bg_color: $surface_hover;
 
   $insensitive_factor: 3%;
 
@@ -56,13 +53,15 @@
   @if $type == 'normal' {
     background-color: $entry_bg_color;
     color: $entry_fg_color;
+    box-shadow: active-inset-shadow-mix($entry_bg_color, $checked_indicator, 75%, 3px, 0.5px);
   }
 
+  // focus
   @if $type == 'focus' {
     background-color: $entry_bg_color;
     color: $entry_fg_color;
-    border-color: $accent_bg_color;
-    box-shadow: active-inset-shadow-mix($entry_bg_color, $accent_bg_color, 75%, 3px, 0.5px);
+    border-color: $focus_indicator;
+    box-shadow: active-inset-shadow-mix($entry_bg_color, $checked_indicator, 75%, 3px, 0.5px);
   }
 
   @if $type == 'hover' {
@@ -87,7 +86,7 @@
   //
 
   // mix input colors to get button background color
-  $button_bg_color: $light_bg_color;
+  $button_bg_color: $surface_view;
 
   // background color mix override for flat style; the button bg color is the background color input
   @if $style == 'flat' { $button_bg_color: $c;}
@@ -99,9 +98,9 @@
   $insensitive_factor: 3%;
 
   // button base state background colors
-  $hover_button_bg_color: $lighter_bg_color;
-  $active_button_bg_color: $lightest_bg_color;
-  $checked_button_bg_color: $lightest_bg_color;
+  $hover_button_bg_color: $surface_hover;
+  $active_button_bg_color: $surface_active;
+  $checked_button_bg_color: $surface_active;
   $insensitive_button_bg_color: adjust-color-variant-inverse($button_bg_color, $insensitive_factor);
 
   // background color mix override for default button style
@@ -123,10 +122,11 @@
     border: 1px solid $borders_color;
   }
 
+  // focus
   @if $type == 'focus' {
     color: $tc;
     background-color: $button_bg_color;
-    border: 1px solid $accent_bg_color;
+    border: 1px solid $focus_indicator;
   }
 
   // hover button

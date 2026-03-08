@@ -26,7 +26,7 @@ $popover_arrow_height: 12px;
   padding: 0.3em 0.5em 0.3em 0.5em;
   border-radius: $base_border_radius;
   color: $fg_color;
-  &:selected,&:hover { background-color: $lighter_bg_color; }
+  &:selected,&:hover { background-color: $surface_hover; }
 }
 
 .candidate-page-button-box {

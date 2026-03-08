@@ -15,12 +15,12 @@ $applet_padding: 6px;
     &.vertical { padding: $applet_padding 0; }
 
     &:hover {
-      background-color: $lightest_bg_color;
+      background-color: $surface_active;
       transition-duration: 150ms;
     }
     &:checked {
-      box-shadow: active-inset-shadow-mix($lightest_bg_color, $accent_bg_color, 75%, 2px);
-      background-color: $lightest_bg_color;
+      box-shadow: active-inset-shadow-mix($surface_active, $checked_indicator, 75%, 2px);
+      background-color: $surface_active;
       transition-duration: 150ms;
     }
 
@@ -50,7 +50,7 @@ $applet_padding: 6px;
 
 .applet-cornerbar {
   width: $base_margin * 2;
-  background-color: $lighter_bg_color;
+  background-color: $surface_hover;
   border: 1px solid $borders_color;
 
   &.vertical { height: $base_margin * 2; }
@@ -60,7 +60,7 @@ $applet_padding: 6px;
   }
 }
 
-.applet-cornerbar-box:hover > .applet-cornerbar { background-color: $lightest_bg_color; }
+.applet-cornerbar-box:hover > .applet-cornerbar { background-color: $surface_active; }
 
 
 // notification applet
@@ -78,7 +78,7 @@ $applet_padding: 6px;
   .launcher {
     padding: 0 2px;
 
-    &:hover { background-color: $lighter_bg_color; }
+    &:hover { background-color: $surface_hover; }
   }
 
   &.vertical {
@@ -197,13 +197,13 @@ $applet_padding: 6px;
   &.vertical { height: 2em; }
 
   &:outlined {
-    background-color: $light_bg_color;
+    background-color: $surface_view;
     color: $fg_color;
 
-    &:hover { background-color: $lighter_bg_color; }
+    &:hover { background-color: $surface_hover; }
   }
 
-  &:hover { background-color: $light_bg_color; }
+  &:hover { background-color: $surface_view; }
 
   &:shaded { // this is a workspace with no open windows
     background-color: adjust-color-variant($bg_color, 5%);
@@ -215,11 +215,11 @@ $applet_padding: 6px;
   spacing: $base_margin;
 
   .workspace {
-    background-color: $base_color;
-    box-shadow: active-inset-shadow-mix($lightest_bg_color, $accent_bg_color, 75%, 1px);
+    background-color: $surface_alt;
+    box-shadow: active-inset-shadow-mix($surface_active, $checked_indicator, 75%, 1px);
 
     &:active {
-      box-shadow: active-inset-shadow-mix($lightest_bg_color, $accent_color, 10%, 1px);
+      box-shadow: active-inset-shadow-mix($surface_active, $accent_color, 10%, 1px);
 
       .windows {
         -active-window-background: transparentize($workspace_window_color, 0.7);

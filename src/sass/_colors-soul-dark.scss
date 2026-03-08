@@ -35,11 +35,6 @@ $common_assets: "common-assets";
 $large_icon_color: rgba($fg_color, 0.85);
 $light_text_color: mix($fg_color, $bg_color, 75%);
 
-$light_bg_color: mix($bg_color, #ffffff, 90%);
-$light_base_color: mix($base_color, #ffffff, 90%);
-$lighter_bg_color: mix($bg_color, #ffffff, 85%);
-$lightest_bg_color: mix($bg_color, #ffffff, 80%);
-
 $link_color: #7eb2d4;
 
 $borders_color: #555555;
@@ -58,3 +53,20 @@ $osd_fg_color: $fg_color;
 
 // Workspace switcher window representation
 $workspace_window_color: $fg_color;
+
+// --- Semantic Tokens ---
+
+// Surface hierarchy
+$surface_view: mix($bg_color, #ffffff, 90%);
+$surface_hover: mix($bg_color, #ffffff, 85%);
+$surface_active: mix($bg_color, #ffffff, 80%);
+
+// Alternate surfaces
+$surface_alt: $base_color;
+$surface_alt_hover: mix($base_color, #ffffff, 90%);
+
+// Focus indicator
+$focus_indicator: $accent_bg_color;
+
+// Checked/active/current state indicator
+$checked_indicator: $accent_bg_color;

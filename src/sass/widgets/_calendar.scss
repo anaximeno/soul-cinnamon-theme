@@ -25,7 +25,7 @@
     transition-property: background-color, border-color;
 
     &:hover {
-      background-color: $lightest_bg_color;
+      background-color: $surface_active;
       border-color: $borders_color;
       transition-duration: 150ms;
     }
@@ -96,7 +96,7 @@
     transition-property: background-color, border-color;
 
     &:hover {
-      background-color: $lighter_bg_color;
+      background-color: $surface_hover;
       border-color: $borders_color;
       transition-duration: 150ms;
     }
@@ -114,11 +114,11 @@
   &-nonwork-day { color: $fg_color; }
 
   &-today {
-    background-color: $lightest_bg_color;
-    border: 1px solid $accent_bg_color;
-    box-shadow: active-inset-shadow-mix($lightest_bg_color, $accent_bg_color, 75%, 1px, 0.5px);
+    background-color: $surface_active;
+    border: 1px solid $checked_indicator;
+    box-shadow: active-inset-shadow-mix($surface_active, $checked_indicator, 75%, 1px, 0.5px);
 
-    &:hover { background-color: $lighter_bg_color; }
+    &:hover { background-color: $surface_hover; }
 
     &:selected {}
   }
@@ -130,9 +130,9 @@
   &-not-today {
 
     &:selected {
-      background-color: $light_bg_color;
-      border-color: $accent_bg_color;
-      box-shadow: active-inset-shadow-mix($light_bg_color, $accent_bg_color, 75%, 1px, 0.5px);
+      background-color: $surface_view;
+      border-color: $checked_indicator;
+      box-shadow: active-inset-shadow-mix($surface_view, $checked_indicator, 75%, 1px, 0.5px);
     }
   }
 
