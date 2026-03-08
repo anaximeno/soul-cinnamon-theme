@@ -53,7 +53,6 @@
   @if $type == 'normal' {
     background-color: $entry_bg_color;
     color: $entry_fg_color;
-    box-shadow: active-inset-shadow-mix($entry_bg_color, $checked_indicator, 75%, 3px, 0.5px);
   }
 
   // focus
