@@ -12,14 +12,21 @@ $notification_width: 30em;
   spacing-columns: $base_padding * 1.5;
 
   &.multi-line-notification {
+    max-height: $notification_width * 0.70;
     padding-bottom: $base_padding * 2;
     color: $fg_color;
   }
 
-  &-body { spacing: $base_padding * 1.5; }
+  &.notification-with-image {
+    min-height: $notification_width * 0.40;
+  }
+
+  &-body { spacing: $base_padding * 1.5; padding-right: $base_padding; }
   &-actions { spacing: $base_padding * 2; }
 
-  &-scrollview {}
+  &-scrollview {
+    min-height: $notification_width * 0.10;
+  }
 
   StEntry {}
 }
@@ -34,7 +41,7 @@ $notification_width: 30em;
 
   &-button {
     @extend %button;
-    padding: 6px $base_padding * 2;
+    padding: 3px $base_padding * 2;
   }
 
   &-icon-button {
