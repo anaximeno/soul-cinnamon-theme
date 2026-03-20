@@ -201,7 +201,7 @@ stage {
 
 %osd_base {
   color: $fg_color;
-  background-color: transparentize($bg_color, 0.08);
+  background-color: $osd_bg_color;
   border: 1px solid $borders_color;
   border-radius: $base_border_radius;
   text-align: center;
