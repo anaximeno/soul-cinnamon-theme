@@ -10,8 +10,9 @@
 
   &-item-box {
     padding: 0 $base_padding;
+    color: transparentize($fg_color, 0.15);
     transition-duration: 200ms;
-    transition-property: background-color, border-color;
+    transition-property: background-color, border-color, color;
 
     &.top {
       border-bottom-width: $windowlist_border_width;
@@ -39,12 +40,14 @@
     &:hover {
       background-color: $surface_active;
       border-color: transparentize($focus_indicator, 0.7);
+      color: $fg_color;
       transition-duration: 150ms;
     }
-    &:active { border-color: $focus_indicator; }
+    &:active { border-color: $focus_indicator; color: $fg_color; }
     &:focus {
       background-color: $surface_active;
       border-color: $focus_indicator;
+      color: $fg_color;
       box-shadow: active-inset-shadow-mix($surface_active, $checked_indicator, 75%, 2px);
     }
 

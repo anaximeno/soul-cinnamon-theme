@@ -58,12 +58,12 @@ $workspace_window_color: $fg_color;
 
 // Surface hierarchy
 $surface_view: lighten($bg_color, 2%);
-$surface_hover: darken($bg_color, 2%);
+$surface_hover: darken($bg_color, 4%);
 $surface_active: darken($bg_color, 12%);
 
 // Alternate surfaces
 $surface_alt: $base_color;
-$surface_alt_hover: darken($base_color, 4%);
+$surface_alt_hover: darken($base_color, 6%);
 
 // Focus indicator
 $focus_indicator: $accent_bg_color;

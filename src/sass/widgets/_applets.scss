@@ -50,19 +50,21 @@ $applet_padding: 6px;
 
 .applet-cornerbar {
   width: $base_margin * 2;
-  background-color: $surface_hover;
-  border: 0.7px solid $borders_color;
-  margin: $base_margin/4 $base_margin/4;
+  margin: $base_margin / 4;
+  background-color: $surface_view;
+  box-shadow: active-inset-shadow-mix($surface_view, $accent_bg_color, 75%, 1px, 0.5px);
+  transition-property: box-shadow, background-color;
+  transition-duration: 150ms;
 
   &.vertical { height: $base_margin * 2; }
 
-  &-box {
-    background: none;
+  &-box { background: none; }
+
+  &-box:hover > .applet-cornerbar {
+    background-color: $surface_hover;
+    box-shadow: active-inset-shadow-mix($surface_hover, $accent_bg_color, 75%, 1px, 0.5px);
   }
 }
-
-.applet-cornerbar-box:hover > .applet-cornerbar { background-color: $surface_active; }
-
 
 // notification applet
 
@@ -217,10 +219,10 @@ $applet_padding: 6px;
 
   .workspace {
     background-color: $surface_alt;
-    box-shadow: active-inset-shadow-mix($surface_active, $checked_indicator, 75%, 1px);
+    box-shadow: active-inset-shadow-mix($surface_active, $checked_indicator, 75%, 1px, 0.5px);
 
     &:active {
-      box-shadow: active-inset-shadow-mix($surface_active, $accent_color, 10%, 1px);
+      box-shadow: active-inset-shadow-mix($surface_active, $accent_color, 10%, 1px, 0.5px);
 
       .windows {
         -active-window-background: transparentize($workspace_window_color, 0.7);

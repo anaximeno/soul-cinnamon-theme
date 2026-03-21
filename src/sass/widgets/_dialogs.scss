@@ -5,7 +5,7 @@
   color: $fg_color;
   border-radius: $modal_dialog_radius;
   border: 1px solid $borders_color;
-  padding: $base_padding * 2.5;
+  padding: $base_padding * 3;
 
   .dialog-button-box {
     spacing: $base_padding * 1.5;
@@ -14,7 +14,7 @@
   .dialog-content-box {
     margin-top: $base_margin * 2;
     margin-bottom: $base_margin * 4;
-    spacing: $base_margin * 5;
+    spacing: $base_margin * 4;
     max-width: 28em;
   }
 

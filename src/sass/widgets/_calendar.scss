@@ -1,7 +1,7 @@
 .calendar {
   margin-top: $base_margin * 4;
-  spacing-rows: 3px;
-  spacing-columns: 3px;
+  spacing-rows: $base_margin / 2;
+  spacing-columns: $base_margin / 2;
 
   // can be used to set the entire bg color
   &-background {}
@@ -87,8 +87,8 @@
 
   &-day-base {
     text-align: center;
-    width: 2.3em;
-    height: 2.3em;
+    width: 2.5em;
+    height: 2.5em;
     border-radius: $base_border_radius;
     color: $insensitive_fg_color;
     border: 1px solid transparent;
