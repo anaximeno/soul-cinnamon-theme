@@ -40,7 +40,7 @@
   &-background { background-color: $expo_bg_color; }
 
   &-workspace-thumbnail-frame {
-    border: 1px solid transparentize($focus_indicator, 0.6);
+    border: 1px solid transparentize($focus_indicator, 0.5);
 
     &#active {
       border-color: $focus_indicator;

@@ -50,9 +50,8 @@ $applet_padding: 6px;
 
 .applet-cornerbar {
   width: $base_margin * 2;
-  margin: $base_margin / 4;
-  background-color: $surface_view;
-  box-shadow: active-inset-shadow-mix($surface_view, $accent_bg_color, 75%, 1px);
+  background-color: $surface_alt;
+  box-shadow: inset 0 0 0 0.5px $borders_color;
   transition-property: box-shadow, background-color;
   transition-duration: 150ms;
 
@@ -61,8 +60,7 @@ $applet_padding: 6px;
   &-box { background: none; }
 
   &-box:hover > .applet-cornerbar {
-    background-color: $surface_hover;
-    box-shadow: active-inset-shadow-mix($surface_hover, $accent_bg_color, 75%, 1px);
+    background-color: $surface_alt_hover;
   }
 }
 
