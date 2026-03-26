@@ -48,7 +48,7 @@
       background-color: $surface_active;
       border-color: $focus_indicator;
       color: $fg_color;
-      box-shadow: active-inset-shadow-mix($surface_active, $checked_indicator, 75%, 2px);
+      box-shadow: focus-ring($surface_active, $checked_indicator, 75%, 2px, 0.5px);
     }
 
     & .progress { background-color: transparentize($success_color, 0.2); }

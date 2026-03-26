@@ -116,7 +116,7 @@
   &-today {
     background-color: $surface_active;
     border: 1px solid $checked_indicator;
-    box-shadow: active-inset-shadow-mix($surface_active, $checked_indicator, 75%, 1px, 0.5px);
+    box-shadow: focus-ring($surface_active, $checked_indicator, 75%, 1px, 0);
 
     &:hover { background-color: $surface_hover; }
 
@@ -132,7 +132,7 @@
     &:selected {
       background-color: $surface_view;
       border-color: $checked_indicator;
-      box-shadow: active-inset-shadow-mix($surface_view, $checked_indicator, 75%, 1px, 0.5px);
+      box-shadow: focus-ring($surface_view, $checked_indicator, 75%, 1px, 0);
     }
   }
 

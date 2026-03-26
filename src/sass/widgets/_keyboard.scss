@@ -8,7 +8,7 @@ $shifted_key_color: adjust-color-variant($surface_active, 8%);
 
 #virtual-keyboard {
   background-color: $panel_bg;
-  box-shadow: active-inset-shadow-mix($panel_bg, $borders_color, 30%, 0.5px, 0.5px);
+  box-shadow: focus-ring($panel_bg, $borders_color, 30%, 0.5px, 0.5px);
 }
 
 // the container for individual keys
@@ -46,7 +46,7 @@ $shifted_key_color: adjust-color-variant($surface_active, 8%);
 
   &.shift-key-uppercase {
     background-color: $shifted_key_color;
-    box-shadow: active-inset-shadow-mix($shifted_key_color, $surface_hover, 60%, 4px, 1px);
+    box-shadow: focus-ring($shifted_key_color, $surface_hover, 60%, 4px, 1px);
   }
   &.shift-key-uppercase:hover { background-color: $surface_hover; }
   &.enter-key { background-color: adjust-color-variant-inverse($accent_bg_color, 4%); }
@@ -59,7 +59,7 @@ $shifted_key_color: adjust-color-variant($surface_active, 8%);
 
     &:latched {
       background-color: $shifted_key_color;
-      box-shadow: active-inset-shadow-mix($shifted_key_color, $surface_hover, 60%, 4px, 1px);
+      box-shadow: focus-ring($shifted_key_color, $surface_hover, 60%, 4px, 1px);
     }
   }
 

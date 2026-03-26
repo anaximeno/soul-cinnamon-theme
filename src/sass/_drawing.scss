@@ -24,7 +24,8 @@
   }
 }
 
-@function active-inset-shadow-mix($color_base, $color_overlay, $mix_amount: 50%, $blur: 1px, $spread: 1px) {
+// Function to create a focus ring box-shadow with color mixing
+@function focus-ring($color_base, $color_overlay, $mix_amount: 50%, $blur: 1px, $spread: 1px) {
   @return inset 0 0 $blur $spread mix($color_base, adjust-color-variant($color_overlay, 5%), $mix_amount);
 }
 
@@ -60,7 +61,7 @@
     background-color: $entry_bg_color;
     color: $entry_fg_color;
     border-color: $focus_indicator;
-    box-shadow: active-inset-shadow-mix($entry_bg_color, $checked_indicator, 75%, 3px, 0.5px);
+    box-shadow: focus-ring($entry_bg_color, $checked_indicator, 75%, 3px, 0);
   }
 
   @if $type == 'hover' {
