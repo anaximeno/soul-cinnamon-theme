@@ -7,7 +7,7 @@
   background-color: $panel_bg;
   border: 1px solid $borders_color;
   border-radius: $larger_border_radius;
-  box-shadow: 0 3px 6px $shadow_color;
+  box-shadow: $elevation_medium;
   padding: $base_padding * 2.5;
 
   &-item-container { spacing: $base_margin * 2; }

@@ -64,7 +64,7 @@
     margin: 4px;
     background-color: $bg_color;
     border-radius: $base_border_radius;
-    box-shadow: 0 3px 6px $shadow_color;
+    box-shadow: $elevation_medium;
 
     > StBoxLayout { padding: 6px; }
 
@@ -231,6 +231,6 @@
     border-radius: $base_border_radius;
     padding: $base_padding * 2;
     spacing: $base_margin;
-    box-shadow: 0 0 6px 0 $shadow_color;
+    box-shadow: $elevation_medium;
   }
 }

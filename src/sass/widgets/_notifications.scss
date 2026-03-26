@@ -4,7 +4,7 @@ $notification_width: 30em;
   width: $notification_width;
   border-radius: $larger_border_radius;
   border: 1px solid $borders_color;
-  box-shadow: 0 3px 8px $shadow_color;
+  box-shadow: $elevation_high;
   background-color: $bg_color;
   padding: $base_padding * 2;
   margin-from-right-edge-of-screen: 16px;

@@ -206,6 +206,7 @@ stage {
   border-radius: $base_border_radius;
   text-align: center;
   padding: $base_padding * 3;
+  box-shadow: $elevation_high;
 }
 
 %menu_button_base {

@@ -136,7 +136,7 @@ StScrollBar {
   font-weight: normal;
   text-align: center;
   margin: $base_margin;
-  box-shadow: 0 2px 4px $shadow_color;
+  box-shadow: $elevation_medium;
 }
 
 // user avatar

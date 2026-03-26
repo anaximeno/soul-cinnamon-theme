@@ -38,7 +38,6 @@ $light_text_color: mix($fg_color, $bg_color, 75%);
 $link_color: #7eb2d4;
 
 $borders_color: #555555;
-$shadow_color: rgba(0, 0, 0, 0.40);
 
 $insensitive_fg_color: mix($fg_color, $bg_color, 45%);
 
@@ -70,3 +69,10 @@ $focus_indicator: $accent_bg_color;
 
 // Checked/active/current state indicator
 $checked_indicator: $accent_bg_color;
+
+// Global shadow elevations
+$shadow_color: rgba(0, 0, 0, 0.40);
+
+$elevation_low:    0 1px 2px $shadow_color;
+$elevation_medium: 0 2px 6px $shadow_color;
+$elevation_high:   0 4px 8px $shadow_color;

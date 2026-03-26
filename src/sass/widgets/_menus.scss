@@ -13,7 +13,7 @@ $menuitem_border_radius: $base_border_radius;
   background-color: $bg_color;
   border-radius: $larger_border_radius;
   border: 1px solid $borders_color;
-  box-shadow: 0 2px 6px $shadow_color;
+  box-shadow: $elevation_medium;
 }
 
 // menu items
@@ -116,7 +116,7 @@ $menuitem_border_radius: $base_border_radius;
   background-color: $bg_color;
   border-radius: $larger_border_radius;
   border: 1px solid $borders_color;
-  box-shadow: 0 2px 4px $shadow_color;
+  box-shadow: $elevation_medium;
 }
 
 // Used by the recents applet
