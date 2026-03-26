@@ -106,7 +106,7 @@
   &-button-label { padding-left: 4px;}
 
   &-number-label {
-    font-size: 12px;
+    @include fontsize(11pt);
   }
 
   &-badge {
@@ -123,7 +123,7 @@
   }
 
   &-notifications-badge-label {
-    font-size: 12px;
+    @include fontsize(11pt);
   }
 
   &-scrollbox {
@@ -196,7 +196,7 @@
 
       StBin {
         padding-right: 0;
-        padding-left: 5px;
+        padding-left: $base_margin;
       }
     }
 
@@ -207,7 +207,7 @@
 
       StBin {
         padding-left: 0;
-        padding-right: 5px;
+        padding-right: $base_margin;
       }
     }
 
