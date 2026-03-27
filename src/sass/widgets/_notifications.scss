@@ -1,7 +1,5 @@
-$notification_width: 30em;
-
 #notification {
-  width: $notification_width;
+  width: 30em;
   border-radius: $larger_border_radius;
   border: 1px solid $borders_color;
   box-shadow: $elevation_high;
@@ -12,21 +10,17 @@ $notification_width: 30em;
   spacing-columns: $base_padding * 1.5;
 
   &.multi-line-notification {
-    max-height: $notification_width * 0.70;
+    max-height: 20em;
     padding-bottom: $base_padding * 2;
     color: $fg_color;
   }
 
-  &.notification-with-image {
-    min-height: $notification_width * 0.40;
-  }
+  &.notification-with-image {}
 
   &-body { spacing: $base_padding * 1.5; padding-right: $base_padding; }
   &-actions { spacing: $base_padding * 2; }
 
-  &-scrollview {
-    min-height: $notification_width * 0.10;
-  }
+  &-scrollview {}
 
   StEntry {}
 }
