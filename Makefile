@@ -31,6 +31,7 @@ light:
 
 install: all
 	@echo "Installing Soul Cinnamon Theme..."
+	@mkdir -p $(THEMES_DIR)
 	@cp -r $(OUT_DIR)/* $(THEMES_DIR) 2>/dev/null || true
 	@echo "Soul Cinnamon Theme installed to $(THEMES_DIR)"
 
