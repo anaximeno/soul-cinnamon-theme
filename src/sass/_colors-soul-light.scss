@@ -65,7 +65,7 @@ $surface_alt: $base_color;
 $surface_alt_hover: darken($base_color, 6%);
 
 // Focus indicator
-$focus_indicator: $accent_bg_color;
+$focus_indicator: darken($accent_bg_color, 8%);
 
 // Checked/active/current state indicator
 $checked_indicator: $accent_bg_color;

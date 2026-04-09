@@ -3,6 +3,7 @@ $base_margin: 5px;
 $comfortable_padding: $base_padding + 2px;
 $base_border_radius: 8px;
 $larger_border_radius: 14px;
+$control_pill_radius: 99px;
 
 $modal_dialog_radius: 18px;
 
@@ -12,6 +13,9 @@ $scalable_icon_size: to_em(16px);
 
 $min_interactive_size: 28px;
 $comfortable_button_height: 32px;
+
+$menu_min_width: 14em;
+$menu_compact_width: 10em;
 
 // stage
 stage {

@@ -79,7 +79,7 @@ $appmenu_large_padding: $base_padding * 3;
     .appmenu-system-button {
       padding: $base_padding * 1.4;
       border: 1px solid $borders_color;
-      border-radius: 99px;
+      border-radius: $control_pill_radius;
       background-color: $surface_alt;
       transition-duration: 200ms;
       transition-property: background-color, border-color, box-shadow;
@@ -116,7 +116,7 @@ $appmenu_large_padding: $base_padding * 3;
     // Fallback/Main definition
     padding: $base_padding * 1.4;
     border: 1px solid $borders_color;
-    border-radius: 99px;
+    border-radius: $control_pill_radius;
     background-color: $bg_color;
 
     &-shutdown { background-color: $destructive_bg_color; color: #fff; }
@@ -179,6 +179,19 @@ $appmenu_large_padding: $base_padding * 3;
 
   &-search-entry-icon {
     icon-size: $scalable_icon_size;
+  }
+
+  &-context-menu {
+    margin: 0 $appmenu_padding $appmenu_padding;
+
+    .popup-sub-menu {
+      background-color: $surface_alt;
+      border-color: transparentize($borders_color, 0.2);
+      box-shadow: $elevation_low;
+      margin: 0;
+    }
+
+    .popup-menu-item { margin: 0; }
   }
 }
 

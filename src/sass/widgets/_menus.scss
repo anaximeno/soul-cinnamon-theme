@@ -2,7 +2,7 @@ $menuitem_border_radius: $base_border_radius;
 
 //container of the popup menu
 .menu {
-  min-width: 14em;
+  min-width: $menu_min_width;
   color: $fg_color;
   padding: 6px;
 }
@@ -19,6 +19,13 @@ $menuitem_border_radius: $base_border_radius;
 // menu items
 .popup-menu-item {
   @extend %menuitem;
+
+  .check-box,
+  .check-box-2,
+  .radiobutton {
+    StBoxLayout,
+    CinnamonGenericContainer { spacing: 0; }
+  }
 
   &:hover {
     background-color: $surface_view;
@@ -43,11 +50,11 @@ $menuitem_border_radius: $base_border_radius;
 }
 
 // Used in the battery applet for the status
-// .popup-inactive-menu-item {
-//   color: $fg_color;
+.popup-inactive-menu-item {
+  color: $light_text_color;
 
-//   &:insensitive { color: $insensitive_fg_color; }
-// }
+  &:insensitive { color: $insensitive_fg_color; }
+}
 
 .popup-slider-menu-item {
   @extend %slider;
@@ -126,6 +133,10 @@ $menuitem_border_radius: $base_border_radius;
   padding: 0 $base_padding * 2;
 }
 
+.popup-printer-menu-item {
+  spacing-columns: $base_padding;
+}
+
 // this is not currently being used anywhere
 .popup-alternating-menu-item:alternate { font-weight: normal; }
 
@@ -144,8 +155,21 @@ $menuitem_border_radius: $base_border_radius;
   }
 }
 
+.popup-inhibitor-menu-item .popup-menu-icon {
+  icon-size: to_em(24px);
+}
+
 // Used in window quick list and power applet
 .popup-subtitle-menu-item { font-weight: normal; }
+
+.entry-context-menu {
+  min-width: $menu_compact_width;
+
+  .popup-menu-content {
+    padding: $base_padding;
+    box-shadow: $elevation_low;
+  }
+}
 
 // Used to set the color of the signal strength icons in network applet
 .nm-menu-item-icons { spacing: .5em; }
