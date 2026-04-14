@@ -235,10 +235,10 @@ $applet_padding: 6px;
 
   .workspace {
     background-color: $surface_alt;
-    box-shadow: focus-ring($surface_active, $checked_indicator, 75%, 1px, 0.5px);
+    box-shadow: focus-ring($surface_alt, $checked_indicator, 50%, 1px, 0.5px);
 
     &:active {
-      box-shadow: focus-ring($surface_active, $accent_color, 10%, 1px);
+      box-shadow: focus-ring($surface_alt, $accent_color, 10%, 1px);
 
       .windows {
         -active-window-background: transparentize($workspace_window_color, 0.7);

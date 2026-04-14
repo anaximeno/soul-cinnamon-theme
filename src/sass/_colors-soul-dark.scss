@@ -51,7 +51,7 @@ $osd_bg_color: rgba(24, 24, 24, 0.88);
 $osd_fg_color: $fg_color;
 
 // Workspace switcher window representation
-$workspace_window_color: $fg_color;
+$workspace_window_color: lighten($fg_color, 10%);
 
 // --- Semantic Tokens ---
 
