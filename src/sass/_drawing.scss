@@ -60,7 +60,7 @@
   @if $type == 'focus' {
     background-color: $entry_bg_color;
     color: $entry_fg_color;
-    border-color: $focus_indicator;
+    border: 1px solid $focus_indicator;
     box-shadow: focus-ring($entry_bg_color, $checked_indicator, 75%, 3px, 0);
   }
 
