@@ -54,7 +54,7 @@
     & .progress { background-color: transparentize($success_color, 0.2); }
   }
 
-  &-item-demands-attention { background-color: $warning_color; }
+  &-item-demands-attention { background-color: $warning_bg_color; }
 
   &-thumbnail-label { padding-left: 4px; }
   &-thumbnail-alert { background: transparentize($destructive_color, 0.7); }
@@ -223,7 +223,7 @@
     & .progress { background-color: transparentize($success_color, 0.2); }
   }
 
-  &-item-demands-attention { background-color: $warning_color; }
+  &-item-demands-attention { background-color: $warning_bg_color; }
 
   &-preview {
     border: 1px solid $borders_color;
