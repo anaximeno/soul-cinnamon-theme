@@ -2,13 +2,13 @@ $variant: "dark";
 
 $bg_color: rgba(30,30,30,0.95);
 $base_color: rgba(40,40,40,0.92);
-$fg_color: #e8e8e8;
+$fg_color: #f2f2f2;
 
 $panel_bg: rgba(20,20,20,0.98);
 
 // Accent
-$accent_color: #a8a8a8;
-$accent_bg_color: rgba(140,140,140,0.90);
+$accent_color: #c4c4c4;
+$accent_bg_color: rgba(160,160,160,0.90);
 
 $selected_bg_color: rgba(150,150,150,0.88);
 $selected_fg_color: #ffffff;
@@ -32,14 +32,14 @@ $asset_path: "dark-assets";
 $common_assets: "common-assets";
 
 // Derived colors
-$large_icon_color: rgba($fg_color, 0.90);
-$light_text_color: mix($fg_color, $bg_color, 75%);
+$large_icon_color: rgba($fg_color, 0.95);
+$light_text_color: mix($fg_color, $bg_color, 85%);
 
-$link_color: #7eb2d4;
+$link_color: #9cd1f5;
 
-$borders_color: rgba(85, 85, 85, 0.88);
+$borders_color: rgba(105, 105, 105, 0.90);
 
-$insensitive_fg_color: mix($fg_color, $bg_color, 45%);
+$insensitive_fg_color: mix($fg_color, $bg_color, 60%);
 
 $expo_bg_color: transparentize($bg_color, 0.1);
 

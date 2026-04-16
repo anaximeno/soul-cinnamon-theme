@@ -32,20 +32,20 @@ $asset_path: "light-assets";
 $common_assets: "common-assets";
 
 // Derived colors
-$large_icon_color: rgba($fg_color, 0.85);
-$light_text_color: mix($fg_color, $bg_color, 60%);
+$large_icon_color: rgba($fg_color, 0.90);
+$light_text_color: mix($fg_color, $bg_color, 75%);
 
-$link_color: #1f6fb2;
+$link_color: #125894;
 
-$borders_color: rgba(200, 200, 200, 0.88);
+$borders_color: rgba(170, 170, 170, 0.90);
 
-$expo_bg_color: rgba(0, 0, 0, 0.55);
+$expo_bg_color: rgba(0, 0, 0, 0.65);
 
 $tooltip_bg_color: rgba(255, 255, 255, 0.98);
 $tooltip_fg_color: $fg_color;
-$tooltip_border_color: $borders_color;
+$tooltip_border_color: darken($borders_color, 15%);
 
-$insensitive_fg_color: mix($fg_color, $bg_color, 40%);
+$insensitive_fg_color: mix($fg_color, $bg_color, 55%);
 
 $osd_bg_color: rgba(248, 248, 248, 0.93);
 $osd_fg_color: $fg_color;
