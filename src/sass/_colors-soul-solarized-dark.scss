@@ -1,0 +1,79 @@
+$variant: "dark";
+
+// Slightly adjusted Base03 for better background contrast and visual depth
+$bg_color: rgba(3, 44, 54, 0.95);
+// Slightly adjusted Base02
+$base_color: rgba(10, 54, 66, 0.92);
+// Using a slightly more legible (brighter) text tone than standard base1
+$fg_color: #e5e0d8;
+
+// Deeper tone for panels
+$panel_bg: rgba(0, 34, 43, 0.98);
+
+// Accent (relatively neutral to match theme specs and adapt to other elements)
+$accent_color: #839496;    // base0
+$accent_bg_color: rgba(101, 123, 131, 0.90); // base00
+
+$selected_bg_color: rgba(110, 131, 139, 0.88);
+$selected_fg_color: #fdf6e3; // base3
+
+// Colored elements maintaining the solarized spectrum
+$error_color: #dc322f; // red
+$error_bg_color: rgba(220, 50, 47, 0.92);
+
+$success_color: #859900; // green
+$success_bg_color: rgba(133, 153, 0, 0.92);
+
+$warning_color: #b58900; // yellow
+$warning_bg_color: rgba(181, 137, 0, 0.92);
+
+$destructive_bg_color: rgba(203, 75, 22, 0.92); // orange
+$destructive_color: #cb4b16;
+
+$notification_badge_bg_color: rgba(38, 139, 210, 0.90); // blue
+
+$asset_path: "dark-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.90);
+$light_text_color: mix($fg_color, $bg_color, 75%);
+
+$link_color: #2aa198; // cyan
+
+$borders_color: rgba(88, 110, 117, 0.88); // base01
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 45%);
+
+$expo_bg_color: transparentize($bg_color, 0.1);
+
+$tooltip_bg_color: rgba(3, 44, 54, 0.98);
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$osd_bg_color: rgba(10, 54, 66, 0.93);
+
+// Surfaces
+$surface_view: lighten($bg_color, 3%);
+$surface_hover: lighten($bg_color, 8%);
+$surface_active: lighten($bg_color, 14%);
+
+$surface_alt: $base_color;
+$surface_alt_hover: lighten($base_color, 5%);
+$osd_fg_color: $fg_color;
+
+// Workspace switcher window representation
+$workspace_window_color: lighten($fg_color, 10%);
+
+// Focus indicator
+$focus_indicator: lighten($accent_bg_color, 10%);
+
+// Checked/active/current state indicator
+$checked_indicator: $accent_bg_color;
+
+// Global shadow elevations
+$shadow_color: rgba(0, 0, 0, 0.40);
+
+$elevation_low:    0 1px 2px $shadow_color;
+$elevation_medium: 0 2px 6px $shadow_color;
+$elevation_high:   0 4px 8px $shadow_color;

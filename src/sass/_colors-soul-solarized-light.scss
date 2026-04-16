@@ -1,0 +1,79 @@
+$variant: "light";
+
+// base3
+$bg_color: rgba(253, 246, 227, 0.95);
+// base2
+$base_color: rgba(238, 232, 213, 0.92);
+// High contrast solarized dark tone for readable text
+$fg_color: #2b3640; 
+
+// Base3 slightly adjusted for panel
+$panel_bg: rgba(248, 240, 220, 0.98);
+
+// Accent
+$accent_color: #586e75; // base01
+$accent_bg_color: rgba(131, 148, 150, 0.90); // base0
+
+$selected_bg_color: rgba(147, 161, 161, 0.88); // base1
+$selected_fg_color: #002b36; // base03
+
+// Colored elements
+$error_color: #dc322f; // red
+$error_bg_color: rgba(220, 50, 47, 0.92);
+
+$success_color: #859900; // green
+$success_bg_color: rgba(133, 153, 0, 0.92);
+
+$warning_color: #b58900; // yellow
+$warning_bg_color: rgba(181, 137, 0, 0.92);
+
+$destructive_bg_color: rgba(203, 75, 22, 0.92); // orange
+$destructive_color: #cb4b16;
+
+$notification_badge_bg_color: rgba(38, 139, 210, 0.90); // blue
+
+$asset_path: "light-assets";
+$common_assets: "common-assets";
+
+// Derived colors
+$large_icon_color: rgba($fg_color, 0.85);
+$light_text_color: mix($fg_color, $bg_color, 60%);
+
+$link_color: #2aa198; // cyan
+
+$borders_color: rgba(147, 161, 161, 0.88); // base1
+
+$expo_bg_color: rgba(0, 43, 54, 0.55);
+
+$tooltip_bg_color: rgba(253, 246, 227, 0.98); 
+$tooltip_fg_color: $fg_color;
+$tooltip_border_color: $borders_color;
+
+$insensitive_fg_color: mix($fg_color, $bg_color, 40%);
+
+$osd_bg_color: rgba(238, 232, 213, 0.93);
+
+// Surfaces
+$surface_view: lighten($bg_color, 2%);
+$surface_hover: darken($bg_color, 4%);
+$surface_active: darken($bg_color, 12%);
+
+$surface_alt: $base_color;
+$surface_alt_hover: darken($base_color, 6%);
+$osd_fg_color: $fg_color;
+
+// Workspace switcher window representation
+$workspace_window_color: darken($fg_color, 10%);
+
+// Focus indicator
+$focus_indicator: darken($accent_bg_color, 8%);
+
+// Checked/active/current state indicator
+$checked_indicator: $accent_bg_color;
+
+// Global shadow elevations
+$shadow_color: rgba(0, 0, 0, 0.15);
+
+$elevation_low:    0 1px 2px $shadow_color;
+$elevation_medium: 0 2px 6px $shadow_color;
+$elevation_high:   0 4px 8px $shadow_color;
