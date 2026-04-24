@@ -1,10 +1,10 @@
 $variant: "light";
 
-$bg_color: rgba(245, 245, 245, 0.95);
+$bg_color: rgba(245, 245, 245, 0.94);
 $base_color: rgba(250,250,250,0.92);
 $fg_color: #1a1a1a;
 
-$panel_bg: rgba(247, 247, 247, 0.98);
+$panel_bg: rgba(247, 247, 247, 0.92);
 
 // Accent
 $accent_color: #1f1f1f;
@@ -39,13 +39,13 @@ $link_color: #125894;
 
 $borders_color: rgba(170, 170, 170, 0.90);
 
+$insensitive_fg_color: mix($fg_color, $bg_color, 55%);
+
 $expo_bg_color: rgba(0, 0, 0, 0.65);
 
 $tooltip_bg_color: rgba(255, 255, 255, 0.98);
 $tooltip_fg_color: $fg_color;
 $tooltip_border_color: darken($borders_color, 15%);
-
-$insensitive_fg_color: mix($fg_color, $bg_color, 55%);
 
 $osd_bg_color: rgba(248, 248, 248, 0.93);
 $osd_fg_color: $fg_color;

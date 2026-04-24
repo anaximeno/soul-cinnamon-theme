@@ -5,6 +5,7 @@
   color: $fg_color;
   border-radius: $modal_dialog_radius;
   border: 1px solid $borders_color;
+  box-shadow: $elevation_high;
   padding: $base_padding * 3;
 
   .dialog-button-box {
