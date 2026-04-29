@@ -139,16 +139,30 @@
     }
 
     &-button {
-      &-start,
-      &-end,
-      &-up,
-      &-down {
-        margin: 0;
-        padding: 0;
-      }
+      margin: 1px;
+      box-shadow: 0 0 1px $borders_color;
+      background-color: $surface_view;
+      transition-duration: 150ms;
 
       &-icon {
         icon-size: $scalable_icon_size;
+        color: inherit;
+      }
+
+      &.vertical { }
+
+      &-start { }
+
+      &-end { }
+
+      &:hover {
+        background-color: $surface_hover;
+        color: $fg_color;
+      }
+
+      &:active {
+        background-color: $surface_active;
+        color: $fg_color;
       }
     }
   }
