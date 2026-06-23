@@ -1,0 +1,108 @@
+// Button Behaviors & Placeholders
+
+%button_common {
+  border-radius: $base_border_radius;
+  padding: $base_padding $base_padding * 4;
+  font-weight: 500;
+  min-height: $comfortable_button_height;
+  transition-duration: 200ms;
+  transition-property: background-color, border-color, color, box-shadow;
+}
+
+%button {
+  @extend %button_common;
+  @include button(normal);
+  &:focus { @include button(focus); }
+  &:hover { @include button(hover); }
+  &:active { @include button(active); }
+  &:insensitive { @include button(insensitive); }
+}
+
+%flat_button {
+  @include button(normal, $style: flat);
+  &:focus { @include button(focus, $style: flat); }
+  &:hover { @include button(hover, $style: flat); }
+  &:insensitive { @include button(insensitive, $style: flat); }
+  &:selected,
+  &:active { @include button(active, $style: flat); }
+  &:checked { @include button(checked, $style: flat); }
+}
+
+%icon_button {
+  @extend %button;
+  border-radius: $control_pill_radius;
+  padding: $base_padding;
+  min-height: 16px;
+
+  StIcon {
+    icon-size: 16px;
+  }
+}
+
+// buttons in dialogs
+
+%dialog_button {
+  font-weight: 500;
+  padding: $comfortable_padding $base_padding * 3;
+  border-radius: $base_border_radius;
+
+  @include button(normal);
+  &:focus { @include button(focus); }
+  &:hover { @include button(hover); }
+  &:active { @include button(active); }
+  &:checked { @include button(checked); }
+  &:insensitive { @include button(insensitive); }
+}
+
+%dialog_button_default {
+  @extend %dialog_button;
+
+  @include button(normal, $c: $success_bg_color, $style: default);
+  &:focus { @include button(focus, $c: $success_bg_color, $style: default); }
+  &:hover { @include button(hover, $c: $success_bg_color, $style: default); }
+  &:active { @include button(active, $c: $success_bg_color, $style: default); }
+  &:checked { @include button(checked, $c: $success_bg_color, $style: default); }
+  &:insensitive {
+    border-color: $borders_color;
+
+    @include button(insensitive);
+  }
+}
+
+%dialog_button_destructive {
+  @extend %dialog_button;
+
+  @include button(normal, $c: $error_bg_color, $style: default);
+  &:focus { @include button(focus, $c: $error_bg_color, $style: default); }
+  &:hover { @include button(hover, $c: $error_bg_color, $style: default); }
+  &:active { @include button(active, $c: $error_bg_color, $style: default); }
+  &:checked { @include button(checked, $c: $error_bg_color, $style: default); }
+  &:insensitive {
+    border-color: $borders_color;
+
+    @include button(insensitive);
+  }
+}
+
+%menu_button_base {
+  padding: 6px;
+  spacing: $base_margin;
+  border-radius: $base_border_radius;
+  border: 1px solid transparent;
+  transition-duration: 200ms;
+  transition-property: background-color, border-color, color, box-shadow;
+}
+
+// Generic Button Selectors
+
+.button {
+  @extend %button;
+
+  &.flat { @extend %flat_button; }
+}
+
+.icon-button {
+  @extend %icon_button;
+
+  &.flat { @extend %flat_button; }
+}

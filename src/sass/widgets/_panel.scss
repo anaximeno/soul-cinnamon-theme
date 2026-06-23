@@ -74,8 +74,30 @@
 
     &:entered { background-color: transparentize($error_color, 0.4); }
   }
+
+  &-status-button {
+    padding: 0 $base_padding;
+    border-radius: $base_border_radius;
+    transition-duration: 150ms;
+    transition-property: background-color, box-shadow;
+
+    &:hover { background-color: $surface_active; }
+    &:focus {
+      background-color: $surface_view;
+      box-shadow: focus-ring($surface_view, $focus_indicator, 75%, 1px, 0.5px);
+    }
+  }
 }
 
+.panel-corner {
+  background-color: transparent;
+}
+
+.panel-corner:overview,
+.panel-corner:active,
+.panel-corner:focus {
+  background-color: transparent;
+}
 
 // this is needed to highlight a specific panel when using the panel settings
 #panel:highlight { background-color: mix($panel_bg, $error_bg_color, 75%); }

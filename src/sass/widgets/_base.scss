@@ -50,6 +50,27 @@
   -pie-background-color: rgba(140, 140, 140, 0.6);
 }
 
+// placeholder
+
+.placeholder {
+  spacing: $base_padding + 2px;
+  padding: $base_padding * 2;
+
+  .placeholder-icon { color: $insensitive_fg_color; }
+
+  .placeholder-label {
+    @extend %title_3;
+    text-align: center;
+    color: $insensitive_fg_color;
+    padding-top: $base_padding;
+  }
+
+  .placeholder-description {
+    color: $insensitive_fg_color;
+    text-align: center;
+  }
+}
+
 // ripples
 
 .ripple-pointer-location {
@@ -63,9 +84,9 @@
 .ripple-box {
   width: 104px;
   height: 104px;
-  background-image: url("corner-ripple.png");
+  background-image: url("#{$common_assets}/misc/corner-ripple.svg");
 
-  &:rtl { background-image: url("corner-ripple.png"); }
+  &:rtl { background-image: url("#{$common_assets}/misc/corner-ripple.svg"); }
 }
 
 StScrollView {
