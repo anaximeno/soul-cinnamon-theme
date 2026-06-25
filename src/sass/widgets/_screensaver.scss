@@ -1,0 +1,212 @@
+// Screensaver / lock screen
+
+.screen-shield {
+  background-color: $on_dark_bg_color;
+  color: $on_dark_fg_color;
+
+  .screen-shield-background {
+    background-color: $on_dark_scrim_color;
+  }
+
+  .icon-button {
+    @extend %on_dark_control;
+
+    padding: to_em(12px);
+    margin-left: $base_padding;
+    margin-right: $base_padding;
+    border-radius: 999px;
+
+    StIcon {
+      icon-size: 16px;
+      color: $on_dark_fg_color;
+    }
+  }
+
+  .prompt-dialog {
+    width: 34em;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: $on_dark_fg_color;
+    padding: 0;
+    spacing: $base_padding * 4;
+
+    .dialog-content-box {
+      spacing: $base_padding * 4;
+      margin: 0;
+    }
+
+    .user-widget-label {
+      @extend %title_2;
+
+      color: $on_dark_fg_color;
+      font-weight: 500;
+      margin-bottom: $base_padding * 2;
+      text-align: center;
+    }
+
+    .user-icon {
+      @extend %on_dark_surface;
+
+      icon-size: 128px;
+      box-shadow: $elevation_medium;
+
+      & StIcon {
+        color: $on_dark_fg_color;
+        padding: $base_padding * 5;
+      }
+    }
+
+    &-password-layout {
+      spacing: $base_padding * 2;
+    }
+
+    &-password-entry {
+      @extend %on_dark_entry;
+
+      width: 20em;
+    }
+
+    &-error-label,
+    &-info-label,
+    &-null-label {
+      @extend %caption;
+
+      color: $on_dark_secondary_fg_color;
+      text-align: center;
+    }
+
+    &-error-label {
+      color: lighten($error_color, 8%);
+    }
+  }
+
+  // Clock widget
+
+  .clock-widget {
+    padding: $base_padding;
+    spacing: $base_padding;
+    color: $on_dark_fg_color;
+    text-align: center;
+
+    .clock-time-label {
+      @include fontsize(72pt);
+
+      color: $on_dark_fg_color;
+      font-weight: 300;
+    }
+
+    .clock-date-label {
+      @extend %title_1;
+
+      color: $on_dark_fg_color;
+      font-weight: 500;
+    }
+
+    .clock-message-label {
+      color: $on_dark_secondary_fg_color;
+      font-size: 14pt;
+      margin-top: $base_margin;
+    }
+
+    .clock-message-author {
+      color: $on_dark_tertiary_fg_color;
+      font-size: 12pt;
+      text-align: center;
+    }
+  }
+
+  // Album art widget
+
+  .albumart-widget {
+    @extend %on_dark_surface;
+
+    min-width: 400px;
+    padding: $base_padding * 2;
+    spacing: $base_padding * 2;
+    box-shadow: $elevation_medium;
+
+    .albumart-track-info-box {
+      spacing: $base_padding / 2;
+      max-width: 300px;
+
+      .albumart-title {
+        @extend %title_3;
+
+        color: $on_dark_fg_color;
+      }
+
+      .albumart-artist {
+        @extend %title_4;
+
+        color: $on_dark_secondary_fg_color;
+        font-weight: 500;
+      }
+
+      .albumart-album {
+        @extend %heading;
+
+        color: $on_dark_tertiary_fg_color;
+      }
+
+      .albumart-controls {
+        spacing: $base_padding;
+        padding-top: $base_padding;
+
+        .icon-button {
+          padding: to_em(8px);
+        }
+      }
+
+      .albumart-volume-box {
+        spacing: $base_padding;
+
+        .albumart-volume-icon {
+          color: $on_dark_secondary_fg_color;
+          icon-size: 16px;
+        }
+
+        .albumart-volume-slider {
+          @extend %on_dark_slider;
+
+          height: 20px;
+          min-width: 280px;
+          -slider-height: 4px;
+          -slider-handle-radius: 8px;
+        }
+      }
+    }
+  }
+
+  // Info panel (notification count + battery indicator)
+
+  .info-panel {
+    padding: $base_padding * 1.5;
+    spacing: $base_padding * 2;
+
+    .notification-widget {
+      spacing: $base_margin;
+
+      .notification-widget-label {
+        @extend %caption_heading;
+
+        color: $on_dark_fg_color;
+        text-shadow: $on_dark_shadow;
+      }
+
+      .notification-widget-icon {
+        color: $on_dark_fg_color;
+        text-shadow: $on_dark_shadow;
+      }
+    }
+
+    .power-widget-icon {
+      color: $on_dark_fg_color;
+      text-shadow: $on_dark_shadow;
+
+      &-critical {
+        color: lighten($error_color, 8%);
+      }
+    }
+  }
+}

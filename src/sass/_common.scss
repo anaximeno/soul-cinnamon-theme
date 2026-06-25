@@ -17,6 +17,21 @@ $comfortable_button_height: 32px;
 $menu_min_width: 14em;
 $menu_compact_width: 10em;
 
+$on_dark_bg_color: #000000;
+$on_dark_scrim_color: rgba(0, 0, 0, 0.82);
+$on_dark_fg_color: #ffffff;
+$on_dark_secondary_fg_color: rgba(255, 255, 255, 0.72);
+$on_dark_tertiary_fg_color: rgba(255, 255, 255, 0.56);
+$on_dark_surface_color: rgba(255, 255, 255, 0.10);
+$on_dark_surface_hover_color: rgba(255, 255, 255, 0.16);
+$on_dark_surface_active_color: rgba(255, 255, 255, 0.22);
+$on_dark_surface_insensitive_color: rgba(255, 255, 255, 0.06);
+$on_dark_border_color: rgba(255, 255, 255, 0.18);
+$on_dark_border_insensitive_color: rgba(255, 255, 255, 0.10);
+$on_dark_focus_color: rgba(255, 255, 255, 0.72);
+$on_dark_focus_shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+$on_dark_shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+
 // stage
 stage {
   color: $fg_color;
@@ -202,6 +217,70 @@ stage {
   -slider-active-border-color: transparent;
   -slider-border-width: 0;
   -slider-handle-radius: 0.5em;
+}
+
+%on_dark_surface {
+  color: $on_dark_fg_color;
+  background-color: $on_dark_surface_color;
+  border: 1px solid $on_dark_border_color;
+  border-radius: $base_border_radius;
+}
+
+%on_dark_control {
+  @extend %on_dark_surface;
+
+  transition-duration: 200ms;
+  transition-property: background-color, border-color, color, box-shadow;
+
+  &:focus {
+    border-color: $on_dark_focus_color;
+    box-shadow: $on_dark_focus_shadow;
+  }
+
+  &:hover {
+    background-color: $on_dark_surface_hover_color;
+  }
+
+  &:active,
+  &:checked {
+    background-color: $on_dark_surface_active_color;
+  }
+
+  &:insensitive {
+    color: $on_dark_tertiary_fg_color;
+    background-color: $on_dark_surface_insensitive_color;
+    border-color: $on_dark_border_insensitive_color;
+  }
+}
+
+%on_dark_entry {
+  @extend %entry_common;
+  @extend %on_dark_control;
+
+  caret-color: $on_dark_fg_color;
+  selected-color: $on_dark_bg_color;
+  selection-background-color: $on_dark_fg_color;
+
+  StLabel.hint-text {
+    color: $on_dark_tertiary_fg_color;
+  }
+
+  .capslock-warning {
+    color: $warning_color;
+    icon-size: $scalable_icon_size;
+  }
+
+  StIcon.peek-password {
+    color: $on_dark_secondary_fg_color;
+    icon-size: 16px;
+  }
+}
+
+%on_dark_slider {
+  @extend %slider;
+
+  -slider-background-color: rgba(255, 255, 255, 0.20);
+  -slider-active-background-color: $on_dark_fg_color;
 }
 
 %osd_base {
