@@ -78,6 +78,7 @@ $appmenu_large_padding: $base_padding * 3;
 
     .appmenu-system-button {
       padding: $base_padding * 1.4;
+      margin-top: $base_padding * 2;
       border: 1px solid $focus_indicator;
       border-radius: $control_pill_radius;
       background-color: $surface_alt;
