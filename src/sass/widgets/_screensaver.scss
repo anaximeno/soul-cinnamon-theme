@@ -49,11 +49,13 @@
       @extend %on_dark_surface;
 
       icon-size: 128px;
+      border-radius: $user_icon_border_radius;
       box-shadow: $elevation_medium;
 
       & StIcon {
         color: $on_dark_fg_color;
         padding: $base_padding * 5;
+        border-radius: $user_icon_border_radius;
       }
     }
 

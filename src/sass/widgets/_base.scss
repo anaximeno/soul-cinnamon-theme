@@ -143,26 +143,25 @@ StScrollBar {
 
 .user-icon {
   background-size: contain;
-  border-radius: 999px; // Improved roundness
+  border-radius: $user_icon_border_radius;
   color: $fg_color;
   border-color: transparent;
 
   & StIcon {
-    padding: 0; // Remove padding to fit better
+    padding: 0; // Keep symbolic user icons aligned with image avatars.
     border: none;
-    border-radius: 999px;
+    border-radius: $user_icon_border_radius;
   }
 
   &.user-avatar {
     border: none;
-    border-radius: 999px;
-    background-size: cover; // Ensure it covers the circle
+    border-radius: $user_icon_border_radius;
+    background-size: cover;
   }
 
-  // Ensure highlight doesn't break shape
   StIcon.highlighted {
       border: 1px solid $fg_color;
-      border-radius: 999px;
+      border-radius: $user_icon_border_radius;
   }
 }
 
