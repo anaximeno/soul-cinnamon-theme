@@ -14,7 +14,7 @@
     padding: to_em(12px);
     margin-left: $base_padding;
     margin-right: $base_padding;
-    border-radius: 999px;
+    border-radius: $control_pill_radius;
 
     StIcon {
       icon-size: 16px;

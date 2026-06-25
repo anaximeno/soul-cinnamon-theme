@@ -3,7 +3,7 @@ $base_margin: 4px;
 $comfortable_padding: $base_padding + 2px;
 $base_border_radius: 6px;
 $larger_border_radius: 12px;
-$control_pill_radius: 99px;
+$control_pill_radius: $base_border_radius;
 $user_icon_border_radius: $base_border_radius;
 
 $modal_dialog_radius: 18px;
