@@ -9,7 +9,7 @@
   }
 
   .icon-button {
-    @extend %on_dark_control;
+    @extend %backdrop_control;
 
     padding: to_em(12px);
     margin-left: $base_padding;
@@ -18,7 +18,7 @@
 
     StIcon {
       icon-size: 16px;
-      color: $on_dark_fg_color;
+      color: $backdrop_control_fg_color;
     }
   }
 

@@ -283,6 +283,37 @@ stage {
   -slider-active-background-color: $on_dark_fg_color;
 }
 
+%backdrop_control {
+  color: $backdrop_control_fg_color;
+  background-color: $backdrop_control_surface_color;
+  border: 1px solid $backdrop_control_border_color;
+  border-radius: $base_border_radius;
+  box-shadow: $backdrop_control_shadow;
+  transition-duration: 200ms;
+  transition-property: background-color, border-color, color, box-shadow;
+
+  &:focus {
+    border-color: $backdrop_control_focus_color;
+    box-shadow: $backdrop_control_focus_shadow;
+  }
+
+  &:hover {
+    background-color: $backdrop_control_surface_hover_color;
+  }
+
+  &:active,
+  &:checked {
+    background-color: $backdrop_control_surface_active_color;
+  }
+
+  &:insensitive {
+    color: $backdrop_control_tertiary_fg_color;
+    background-color: $backdrop_control_surface_insensitive_color;
+    border-color: $backdrop_control_border_insensitive_color;
+    box-shadow: none;
+  }
+}
+
 %osd_base {
   color: $fg_color;
   background-color: $osd_bg_color;
