@@ -1,19 +1,24 @@
 $menuitem_border_radius: $base_border_radius;
+$menu_edge_padding: 2px;
 
 //container of the popup menu
 .menu {
   min-width: $menu_min_width;
   color: $fg_color;
-  padding: 2px;
+  padding: $menu_edge_padding;
 }
 
 // popup content
-.popup-menu-content {
+%menu_surface {
   padding: $base_padding;
   background-color: $bg_color;
   border-radius: $larger_border_radius;
   border: 1px solid $borders_color;
   box-shadow: $elevation_high;
+}
+
+.popup-menu-content {
+  @extend %menu_surface;
 }
 
 // menu items
@@ -119,11 +124,7 @@ $menuitem_border_radius: $base_border_radius;
 
 // scale view context menu - just duplicating regular popupmenu here
 .popup-combo-menu {
-  padding: $base_padding;
-  background-color: $bg_color;
-  border-radius: $larger_border_radius;
-  border: 1px solid $borders_color;
-  box-shadow: $elevation_high;
+  @extend %menu_surface;
 }
 
 // Used by the recents applet
@@ -156,7 +157,7 @@ $menuitem_border_radius: $base_border_radius;
 }
 
 .popup-inhibitor-menu-item .popup-menu-icon {
-  icon-size: to_em(24px);
+  icon-size: to_em(26px);
 }
 
 // Used in window quick list and power applet
@@ -166,7 +167,6 @@ $menuitem_border_radius: $base_border_radius;
   min-width: $menu_compact_width;
 
   .popup-menu-content {
-    padding: $base_padding;
     box-shadow: $elevation_low;
   }
 }
