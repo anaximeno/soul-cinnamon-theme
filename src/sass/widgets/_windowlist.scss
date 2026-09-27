@@ -24,7 +24,7 @@
     &.right {
       padding-left: 0;
       padding-right: 0;
-      border-right-width: $windowlist_border_width;
+      border-left-width: $windowlist_border_width;
 
       & StBin { padding-right: 0; }
     }
@@ -32,7 +32,7 @@
     &.left {
       padding-left: 0;
       padding-right: 0;
-      border-left-width: $windowlist_border_width;
+      border-right-width: $windowlist_border_width;
 
       & StBin { padding-left: 0; }
     }
@@ -43,7 +43,7 @@
       color: $fg_color;
       transition-duration: 150ms;
     }
-    &:active { border-color: $focus_indicator; color: $fg_color; }
+    &:active { border-color: transparentize($focus_indicator, 0.3); color: $fg_color; }
     &:focus {
       background-color: $surface_active;
       border-color: $focus_indicator;
