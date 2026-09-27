@@ -62,7 +62,7 @@ $applet_padding: 6px;
   transition-duration: 150ms;
 
   &.vertical { 
-    height: $base_margin;
+    height: $base_margin * 1.25;
     margin: 0 $base_margin/4;
   }
 
