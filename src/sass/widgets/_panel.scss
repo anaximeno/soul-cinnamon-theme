@@ -64,24 +64,20 @@
   }
 
   &-top {
-    border-bottom-width: 0.5px;
-    border-top-width: 0.5px;
-    box-shadow: 0 1px 4px $shadow_color;
+    border-bottom-width: 1px;
+    box-shadow: inset 0 1px $borders_color;
   }
   &-bottom {
-    border-bottom-width: 0.5px;
-    border-top-width: 0.5px;
-    box-shadow: 0 -1px 4px $shadow_color;
+    border-top-width: 1px;
+    box-shadow: inset 0 -1px $borders_color;
   }
   &-left {
-    border-left-width: 0.5px;
-    border-right-width: 0.5px;
-    box-shadow: 1px 0 4px $shadow_color;
+    border-right-width: 1px;
+    box-shadow: inset 1px 0 $borders_color;
   }
   &-right {
-    border-left-width: 0.5px;
-    border-right-width: 0.5px;
-    box-shadow: -1px 0 4px $shadow_color;
+    border-left-width: 1px;
+    box-shadow: inset -1px 0 $borders_color;
   }
 
   // used when adding a new panel
