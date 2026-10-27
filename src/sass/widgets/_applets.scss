@@ -24,7 +24,7 @@ $applet_padding: 6px;
       transition-duration: 150ms;
     }
     &:checked {
-      box-shadow: focus-ring($surface_active, $checked_indicator, 75%, 2px, 0.5px);
+      box-shadow: focus-ring($surface_active, $checked_ring_color, 75%, 2px, 0.5px);
       background-color: $surface_active;
       transition-duration: 150ms;
     }
@@ -239,7 +239,7 @@ $applet_padding: 6px;
 
   .workspace {
     background-color: $surface_alt;
-    box-shadow: focus-ring($surface_alt, $checked_indicator, 50%, 1px, 0.5px);
+    box-shadow: focus-ring($surface_alt, $checked_ring_color, 50%, 1px, 0.5px);
 
     &:active {
       box-shadow: focus-ring($surface_alt, $accent_color, 10%, 1px);

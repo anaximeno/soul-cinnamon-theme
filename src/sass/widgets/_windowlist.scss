@@ -9,7 +9,8 @@
   }
 
   &-item-box {
-    padding: 0 $base_padding;
+    // padding runs along the panel axis only; the cross axis is set by the panel thickness
+    padding: 0 $comfortable_padding;
     color: transparentize($fg_color, 0.15);
     transition-duration: 200ms;
     transition-property: background-color, border-color, color;
@@ -22,16 +23,14 @@
     }
 
     &.right {
-      padding-left: 0;
-      padding-right: 0;
+      padding: $comfortable_padding 0;
       border-left-width: $windowlist_border_width;
 
       & StBin { padding-right: 0; }
     }
 
     &.left {
-      padding-left: 0;
-      padding-right: 0;
+      padding: $comfortable_padding 0;
       border-right-width: $windowlist_border_width;
 
       & StBin { padding-left: 0; }
@@ -48,7 +47,7 @@
       background-color: $surface_active;
       border-color: $focus_indicator;
       color: $fg_color;
-      box-shadow: focus-ring($surface_active, $checked_indicator, 75%, 2px, 0.5px);
+      box-shadow: focus-ring($surface_active, $checked_ring_color, 75%, 2px, 0.5px);
     }
 
     & .progress { background-color: transparentize($success_color, 0.2); }

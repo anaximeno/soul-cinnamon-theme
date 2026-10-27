@@ -67,6 +67,9 @@ $surface_alt_hover: lighten($base_color, 5%);
 // Focus indicator
 $focus_indicator: lighten($accent_bg_color, 10%);
 
+// Color for checked/active rings (blurred and mixed into surfaces)
+$checked_ring_color: $accent_bg_color;
+
 // Checked/active/current state indicator
 $checked_indicator: $accent_bg_color;
 

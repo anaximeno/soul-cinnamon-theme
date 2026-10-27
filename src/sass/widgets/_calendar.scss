@@ -39,7 +39,7 @@
 
     &:active {
       background-color: $surface_hover;
-      border-color: transparentize($checked_indicator, 0.15);
+      border-color: transparentize($checked_ring_color, 0.15);
     }
   }
 
@@ -83,7 +83,7 @@
 
     &:active {
       background-color: $surface_hover;
-      border-color: transparentize($checked_indicator, 0.15);
+      border-color: transparentize($checked_ring_color, 0.15);
     }
   }
 
@@ -113,7 +113,7 @@
 
     &:active {
       background-color: $surface_hover;
-      border-color: transparentize($checked_indicator, 0.15);
+      border-color: transparentize($checked_ring_color, 0.15);
     }
   }
 
@@ -153,7 +153,7 @@
 
     &:active {
       background-color: $surface_hover;
-      border-color: transparentize($checked_indicator, 0.15);
+      border-color: transparentize($checked_ring_color, 0.15);
     }
   }
 
@@ -170,8 +170,8 @@
 
   &-today {
     background-color: $surface_active;
-    border: 1px solid $checked_indicator;
-    box-shadow: focus-ring($surface_active, $checked_indicator, 75%, 1px, 0);
+    border: 1px solid $checked_ring_color;
+    box-shadow: focus-ring($surface_active, $checked_ring_color, 75%, 1px, 0);
 
     &:hover { background-color: $surface_hover; }
 
@@ -186,8 +186,8 @@
 
     &:selected {
       background-color: $surface_view;
-      border-color: $checked_indicator;
-      box-shadow: focus-ring($surface_view, $checked_indicator, 75%, 1px, 0);
+      border-color: $checked_ring_color;
+      box-shadow: focus-ring($surface_view, $checked_ring_color, 75%, 1px, 0);
     }
   }
 
@@ -263,7 +263,7 @@
 
     &:active {
       background-color: $surface_hover;
-      border-color: transparentize($checked_indicator, 0.15);
+      border-color: transparentize($checked_ring_color, 0.15);
     }
   }
 
