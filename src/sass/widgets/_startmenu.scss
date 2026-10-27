@@ -40,7 +40,7 @@ $appmenu_large_padding: $base_padding * 3;
   }
 
   &-main-box {
-    spacing: $appmenu_padding;
+    spacing: 0;
   }
 
   &-right-box {
@@ -68,13 +68,22 @@ $appmenu_large_padding: $base_padding * 3;
   }
 
   &-sidebar {
-    padding: $appmenu_padding 0px;
-    background-color: $surface_alt;
-    border-radius: $larger_border_radius 0 0 $larger_border_radius;
+    margin: $appmenu_padding 0;
+    padding: 0 $appmenu_small_padding;
     border-right-width: 1px;
-    border-color: $borders_color;
+    border-color: transparentize($borders_color, 0.2);
 
     &-user-box {}
+
+    .popup-menu-item {
+      margin: 0;
+      padding: $appmenu_small_padding 0;
+    }
+
+    .popup-separator-menu-item {
+      -gradient-start: transparent;
+      -gradient-end: transparent;
+    }
 
     .appmenu-system-button {
       padding: $base_padding * 1.4;
@@ -99,15 +108,18 @@ $appmenu_large_padding: $base_padding * 3;
   &-sidebar-button {
     @extend %appmenu_button;
 
-    padding: 3px $base_padding 3px $base_padding;
-    margin: 0 $appmenu_padding 0 $appmenu_padding;
+    padding: 3px $base_padding;
+    margin: 0 $appmenu_small_padding;
+    color: $light_text_color;
 
     &:hover {
+      color: $fg_color;
       background-color: $surface_hover;
       border-color: $borders_color;
     }
 
     &:focus {
+      color: $fg_color;
       background-color: $surface_view;
       border-color: $focus_indicator;
     }
