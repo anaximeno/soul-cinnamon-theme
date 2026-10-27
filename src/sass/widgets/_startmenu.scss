@@ -23,6 +23,7 @@
 $appmenu_small_padding: $base_padding;
 $appmenu_padding: $base_padding * 2;
 $appmenu_large_padding: $base_padding * 3;
+$appmenu_divider_color: transparentize($borders_color, 0.2);
 
 %appmenu_button {
   @extend %menu_button_base;
@@ -71,18 +72,18 @@ $appmenu_large_padding: $base_padding * 3;
     margin: $appmenu_padding 0;
     padding: 0 $appmenu_small_padding;
     border-right-width: 1px;
-    border-color: transparentize($borders_color, 0.2);
+    border-color: $appmenu_divider_color;
 
     &-user-box {}
 
     .popup-menu-item {
-      margin: 0;
+      margin: 0 $appmenu_small_padding;
       padding: $appmenu_small_padding 0;
     }
 
     .popup-separator-menu-item {
-      -gradient-start: transparent;
-      -gradient-end: transparent;
+      -gradient-start: $appmenu_divider_color;
+      -gradient-end: $appmenu_divider_color;
     }
 
     .appmenu-system-button {
