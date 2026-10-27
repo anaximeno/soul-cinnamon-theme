@@ -9,8 +9,7 @@
   }
 
   &-item-box {
-    // padding runs along the panel axis only; the cross axis is set by the panel thickness
-    padding: 0 $comfortable_padding;
+    padding: 0 $comfortable_padding/2;
     color: transparentize($fg_color, 0.15);
     transition-duration: 200ms;
     transition-property: background-color, border-color, color;
@@ -23,14 +22,14 @@
     }
 
     &.right {
-      padding: $comfortable_padding 0;
+      padding: $comfortable_padding/2 0;
       border-left-width: $windowlist_border_width;
 
       & StBin { padding-right: 0; }
     }
 
     &.left {
-      padding: $comfortable_padding 0;
+      padding: $comfortable_padding/2 0;
       border-right-width: $windowlist_border_width;
 
       & StBin { padding-left: 0; }
