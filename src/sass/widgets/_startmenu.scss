@@ -111,16 +111,14 @@ $appmenu_divider_color: transparentize($borders_color, 0.2);
 
     padding: 3px $base_padding;
     margin: 0 $appmenu_small_padding;
-    color: $light_text_color;
+    font-style: italic;
 
     &:hover {
-      color: $fg_color;
       background-color: $surface_hover;
       border-color: $borders_color;
     }
 
     &:focus {
-      color: $fg_color;
       background-color: $surface_view;
       border-color: $focus_indicator;
     }
